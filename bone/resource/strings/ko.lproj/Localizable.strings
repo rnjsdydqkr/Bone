@@ -1,0 +1,156 @@
+//= App
+
+//= 앱정보
+app_name = "CART";
+
+//= 앱설정
+app_info_camera = "기기(반지) 등록을 위하여 QR 코드 스캔을 사용합니다. QR 코드 스캔 기능을 사용하기 위하여 카메라 권한을 허용해 주세요.";
+app_info_bluetooth = "App과 기기(반지)는 블루투스를 이용하여 연결 됩니다. 기기(반지) 사용을 위하여 블루투스 권한을 허용해 주세요.";
+
+//= 스플래시
+permission_title_text = "앱 권한 설정 안내";
+permission_subtitle_text = "어플리케이션을 사용하기 위해\n필요한 접근권한을 허용해주세요.";
+permission_info1_text = "위치 권한";
+permission_sub_info1_text = "블루투스 검색";
+
+//= 로그인
+login_title_nav = "LOGIN";
+login_title_text = "나의 건강 지킴이\n카트에 로그인하시고, \n건강 상태를 모니터링 해 보세요.";
+login_title_point = "카트원 플러스";
+
+//= 회원가입
+signUp1_nav_title = "회원가입";
+signUp1_title_text = "카트에 가입하시고,\n나의 건강 상태를\n매일 모니터링해보세요.";
+
+//= 비밀번호 찾기
+find_password1_nav_title = "비밀번호 찾기";
+find_password1_text1_text = "비밀번호 재설정을 위해\n가입하신 아이디를 입력하세요.";
+
+//= 메인 스테이터스
+status_connected_text = "연결 성공";
+status_charging_text = "충전 중";
+status_need_charge_text = "반지를 충전해 주세요";
+
+//= 메인
+main_text1_text = "반가워요, %@ 님";
+main_text1_point = "반가워요,";
+last_measurement = "마지막 측정";
+
+//= 공지사항
+notice_nav_title = "공지사항";
+
+//= FAQ
+faq_nav_title = "자주묻는질문";
+
+//= 셀프체크
+selfcheck1_nav_title = "불규칙 맥파 측정";
+selfcheck1_title_text = "시작 전 올바른 측정 방법을 확인해 주세요.";
+selfcheck1_text1_text = "편안한 자세로 테이블이나 무릎에 손을 올려놓으세요. 기기(반지)를 착용 후 가이드에 따라 진행해 주세요.";
+selfcheck1_text2_text = "기기의 플라스틱 부분(A)이 위로, 기기 안쪽 센서 부분(B)이 아래로 향할 수 있도록 착용해 주세요.";
+
+//= 셀프체크 측정
+selfcheck2_progress_text = "측정중...";
+selfcheck2_noti1_text = "셀프 측정\n진행 중입니다.";
+selfcheck2_noti2_text = "움직이거나\n말하지 마세요.";
+
+//= 셀프체크 결과
+selfcheck_detect_afib_text = "불규칙 맥파 검출";
+selfcheck_detect_non_afib_text = "불규칙 맥파 불검출";
+selfcheck3_pulseCount_text = "맥박수 %d bpm";
+
+//= 기록
+history_selfcheck_nav_title = "기록";
+history_selfcheck_month_button = "월간";
+history_selfcheck_year_button = "연간";
+
+//= 통계
+report_afib_nav_title = "불규칙 맥파 통계";
+report_afib_setting_button = "알림 설정";
+report_afib_filter1_button = "일간";
+
+//= 불규칙맥파알림 설정
+setting_afib_nav_title = "불규칙 맥파 알림";
+setting_afib_select_button_text = "불규칙 맥파 알림";
+setting_afib_input1_text = "지속시간 알림 기준";
+
+//= 맥박수
+report_hr_nav_title = "맥박수";
+report_hr_filter1_button = "일간";
+report_hr_filter2_button = "주간";
+report_hr_filter3_button = "월간";
+
+//= 착용시간
+weartime_nav_title = "착용시간";
+weartime_filter1_button = "주간";
+weartime_filter2_button = "월간";
+weartime_title_text = "평균 착용시간";
+
+//= 증상 입력
+my_symptom_nav_title = "증상 입력";
+my_symptom_title_text = "증상 선택";
+my_symptom_input_placeholder = "상세 증상을 입력해 주세요";
+
+//= 증상 관리
+symptom_nav_title = "증상 관리";
+symptom_delete_button = "삭제";
+symptom_filter_button = "기타";
+symptom_input_button = "증상 입력";
+symptom_selfcheck_detail_button = "측정 기록 자세히 보기";
+symptom_popup_symptom_delete_title = "증상 정보를 삭제 하시겠습니까?";
+symptom_popup_symptom_delete_description = "입력한 증상은 건강 관리에 도움이 되는 정보로서 삭제 시 복구가 불가합니다.\n그래도 삭제 하시겠습니까?";
+
+//= 내정보
+my_info_nav_title = "내 정보";
+my_info_info1_text = "님";
+my_info_subscribing_button = "구독중";
+my_info_unsubscribe_button = "미구독";
+
+//= 내정보-구독
+subscribe_nav_title = "구독 서비스";
+subscribe_text1_text = "PREMIUM REPORT SERVICE";
+subscribe_text2_text = "한달 1번,\n합리적인 금액으로\n당신의 건강을 관리하세요.";
+subscribe_text3_text = "Easy";
+
+//= 내정보-비밀번호
+change_password_nav_title = "비밀번호 변경";
+change_password_title1_text = "기존 비밀번호";
+change_password_password_placeholder = "비밀번호 변경 시 입력해 주세요";
+
+//= 내정보-의사
+doctor_nav_title = "나의 의사";
+doctor_search_placeholder = "의사 코드를 입력하세요";
+doctor_title_text = "의사 목록";
+doctor_text1_text = "등록 된 의사가 없습니다.\n검색창에 코드를 입력하여\n의사를 등록해 주세요";
+
+//= Common
+common_notification_title = "알림";
+common_placeholder_select = "선택";
+common_confirm_button = "확인";
+common_cancel_button = "취소";
+
+//= DeteFormat
+date_aHmmSS = "a h:mm:ss";
+date_aHmm = "a h:mm";
+date_yyyyMMdd_dot = "yyyy. MM. dd";
+date_yyyyMMddE = "yyyy. MM. dd (E)";
+date_yyyyMMddAhMM = "yyyy. MM. dd / a h:mm";
+date_yyyyMMddAhhMM = "yyyy.MM.dd / a hh:mm";
+date_mDeAHHmmSS_text = "M월 d일 (E) a h:mm:ss";
+date_mmDDeAHHmmSS_text = "MM월 dd일 (E) a hh:mm:ss";
+date_aHHmmSS = "a hh:mm:ss";
+date_mmSS_text = "mm분 ss초";
+date_yyyyMM_text = "yyyy년 MM월";
+date_yyyyMMdd_text = "yyyy년 MM월 dd일";
+date_MMdd_text = "MM월 dd일";
+date_yyyyMMddHHmm = "yyyy.MM.dd HH:mm";
+date_yyyyMMddHHmmSS = "yyyy-MM-dd HH:mm:ss";
+date_mmDDe_text = "MM월 dd일 E";
+date_dd_text = "dd일";
+date_yyyyMMdd = "yyyy-MM-dd";
+date_yyyyMM = "yyyy-MM";
+date_yyyy_text = "yyyy년";
+date_yyyy = "yyyy";
+date_total_yyyyMMss = "총 h시간 mm분 s초";
+
+//= I18N
+currLang = "KO";
