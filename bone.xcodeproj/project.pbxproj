@@ -30,24 +30,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		941B6D4A2EF5944900F8132B /* Exceptions for "bone" folder in "bone" target */ = {
+		941B6DA52EF5A8DA00F8132B /* Exceptions for "bone" folder in "bone" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				bone.xcdatamodeld,
 				Info.plist,
 			);
 			target = 941B6D1E2EF5944300F8132B /* bone */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		941B6D212EF5944300F8132B /* bone */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				941B6D4A2EF5944900F8132B /* Exceptions for "bone" folder in "bone" target */,
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		941B6DA62EF5A8DA00F8132B /* Exceptions for "bone" folder in "Compile Sources" phase from "bone" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 941B6D1B2EF5944300F8132B /* Sources */;
+			membershipExceptions = (
+				bone.xcdatamodeld,
 			);
-			path = bone;
-			sourceTree = "<group>";
 		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
 		941B6D3B2EF5944900F8132B /* boneTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = boneTests;
@@ -56,6 +59,15 @@
 		941B6D452EF5944900F8132B /* boneUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = boneUITests;
+			sourceTree = "<group>";
+		};
+		941B6D9C2EF5A8DA00F8132B /* bone */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				941B6DA52EF5A8DA00F8132B /* Exceptions for "bone" folder in "bone" target */,
+				941B6DA62EF5A8DA00F8132B /* Exceptions for "bone" folder in "Compile Sources" phase from "bone" target */,
+			);
+			path = bone;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -88,7 +100,7 @@
 		941B6D162EF5944300F8132B = {
 			isa = PBXGroup;
 			children = (
-				941B6D212EF5944300F8132B /* bone */,
+				941B6D9C2EF5A8DA00F8132B /* bone */,
 				941B6D3B2EF5944900F8132B /* boneTests */,
 				941B6D452EF5944900F8132B /* boneUITests */,
 				941B6D202EF5944300F8132B /* Products */,
@@ -121,7 +133,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				941B6D212EF5944300F8132B /* bone */,
+				941B6D9C2EF5A8DA00F8132B /* bone */,
 			);
 			name = bone;
 			packageProductDependencies = (
@@ -205,6 +217,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"en 2",
+				ko,
 			);
 			mainGroup = 941B6D162EF5944300F8132B;
 			minimizedProjectReferenceProxies = 1;
