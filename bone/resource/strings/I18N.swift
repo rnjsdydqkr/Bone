@@ -99,4 +99,5 @@ struct I18N {
     static let date_yyyy_text = "date_yyyy_text".localized
     static let date_yyyy = "date_yyyy".localized
     static let date_total_yyyyMMss = "date_total_yyyyMMss".localized
+    static let currLang = "currLang".localized
 }

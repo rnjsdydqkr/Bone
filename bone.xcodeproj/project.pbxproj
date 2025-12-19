@@ -33,22 +33,11 @@
 		941B6DA52EF5A8DA00F8132B /* Exceptions for "bone" folder in "bone" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				bone.xcdatamodeld,
 				Info.plist,
 			);
 			target = 941B6D1E2EF5944300F8132B /* bone */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		941B6DA62EF5A8DA00F8132B /* Exceptions for "bone" folder in "Compile Sources" phase from "bone" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 941B6D1B2EF5944300F8132B /* Sources */;
-			membershipExceptions = (
-				bone.xcdatamodeld,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		941B6D3B2EF5944900F8132B /* boneTests */ = {
@@ -65,7 +54,6 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				941B6DA52EF5A8DA00F8132B /* Exceptions for "bone" folder in "bone" target */,
-				941B6DA62EF5A8DA00F8132B /* Exceptions for "bone" folder in "Compile Sources" phase from "bone" target */,
 			);
 			path = bone;
 			sourceTree = "<group>";
