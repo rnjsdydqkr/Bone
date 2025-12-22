@@ -1,13 +1,13 @@
 //
-//  boneUITests.swift
-//  boneUITests
+//  BoneUITests.swift
+//  BoneUITests
 //
 //  Created by 박권용 on 12/19/25.
 //
 
 import XCTest
 
-final class boneUITests: XCTestCase {
+final class BoneUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

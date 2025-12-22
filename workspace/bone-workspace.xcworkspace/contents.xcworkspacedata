@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:../bone.xcodeproj">
+      location = "container:../Bone.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:../libs/KYKit/KYKit.xcodeproj">

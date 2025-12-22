@@ -1,13 +1,13 @@
 //
-//  boneUITestsLaunchTests.swift
-//  boneUITests
+//  BoneUITestsLaunchTests.swift
+//  BoneUITests
 //
 //  Created by 박권용 on 12/19/25.
 //
 
 import XCTest
 
-final class boneUITestsLaunchTests: XCTestCase {
+final class BoneUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  bone
+//  Bone
 //
 //  Created by 박권용 on 12/19/25.
 //

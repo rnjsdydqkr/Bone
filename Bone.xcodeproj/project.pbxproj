@@ -11,7 +11,7 @@
 		941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6DF92EF5B48A00F8132B /* SceneDelegate.swift */; };
 		941B6E112EF5B48A00F8132B /* CommUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6DFB2EF5B48A00F8132B /* CommUtil.swift */; };
 		941B6E122EF5B48A00F8132B /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6DFE2EF5B48A00F8132B /* I18N.swift */; };
-		941B6E132EF5B48A00F8132B /* bone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E052EF5B48A00F8132B /* bone.xcdatamodeld */; };
+		941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E052EF5B48A00F8132B /* Bone.xcdatamodeld */; };
 		941B6E142EF5B48A00F8132B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E0C2EF5B48A00F8132B /* ViewController.swift */; };
 		941B6E152EF5B48A00F8132B /* i18n.sh in Resources */ = {isa = PBXBuildFile; fileRef = 941B6DFD2EF5B48A00F8132B /* i18n.sh */; };
 		941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E012EF5B48A00F8132B /* Localizable.strings */; };
@@ -54,9 +54,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		941B6D1F2EF5944300F8132B /* bone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		941B6D382EF5944900F8132B /* boneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		941B6D422EF5944900F8132B /* boneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		941B6D1F2EF5944300F8132B /* Bone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		941B6D382EF5944900F8132B /* BoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		941B6D422EF5944900F8132B /* BoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6DF82EF5B48A00F8132B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		941B6DF92EF5B48A00F8132B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		941B6DFB2EF5B48A00F8132B /* CommUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommUtil.swift; sourceTree = "<group>"; };
@@ -69,19 +69,19 @@
 		941B6E092EF5B48A00F8132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		941B6E0B2EF5B48A00F8132B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		941B6E0C2EF5B48A00F8132B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		941B6E0E2EF5B48A00F8132B /* bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = bone.xcdatamodel; sourceTree = "<group>"; };
+		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
 		941B6E6A2EF92DE700F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		941B6D3B2EF5944900F8132B /* boneTests */ = {
+		941B6D3B2EF5944900F8132B /* BoneTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = boneTests;
+			path = BoneTests;
 			sourceTree = "<group>";
 		};
-		941B6D452EF5944900F8132B /* boneUITests */ = {
+		941B6D452EF5944900F8132B /* BoneUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = boneUITests;
+			path = BoneUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -115,9 +115,9 @@
 		941B6D162EF5944300F8132B = {
 			isa = PBXGroup;
 			children = (
-				941B6E0D2EF5B48A00F8132B /* bone */,
-				941B6D3B2EF5944900F8132B /* boneTests */,
-				941B6D452EF5944900F8132B /* boneUITests */,
+				941B6E0D2EF5B48A00F8132B /* Bone */,
+				941B6D3B2EF5944900F8132B /* BoneTests */,
+				941B6D452EF5944900F8132B /* BoneUITests */,
 				941B6E692EF92DE700F8132B /* Frameworks */,
 				941B6D202EF5944300F8132B /* Products */,
 			);
@@ -126,9 +126,9 @@
 		941B6D202EF5944300F8132B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				941B6D1F2EF5944300F8132B /* bone.app */,
-				941B6D382EF5944900F8132B /* boneTests.xctest */,
-				941B6D422EF5944900F8132B /* boneUITests.xctest */,
+				941B6D1F2EF5944300F8132B /* Bone.app */,
+				941B6D382EF5944900F8132B /* BoneTests.xctest */,
+				941B6D422EF5944900F8132B /* BoneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 			path = resource;
 			sourceTree = "<group>";
 		};
-		941B6E0D2EF5B48A00F8132B /* bone */ = {
+		941B6E0D2EF5B48A00F8132B /* Bone */ = {
 			isa = PBXGroup;
 			children = (
 				941B6E0B2EF5B48A00F8132B /* README.md */,
@@ -179,9 +179,9 @@
 				941B6E032EF5B48A00F8132B /* resource */,
 				941B6E042EF5B48A00F8132B /* Assets.xcassets */,
 				941B6E062EF5B48A00F8132B /* Info.plist */,
-				941B6E052EF5B48A00F8132B /* bone.xcdatamodeld */,
+				941B6E052EF5B48A00F8132B /* Bone.xcdatamodeld */,
 			);
-			path = bone;
+			path = Bone;
 			sourceTree = "<group>";
 		};
 		941B6E692EF92DE700F8132B /* Frameworks */ = {
@@ -195,9 +195,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		941B6D1E2EF5944300F8132B /* bone */ = {
+		941B6D1E2EF5944300F8132B /* Bone */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 941B6D4B2EF5944900F8132B /* Build configuration list for PBXNativeTarget "bone" */;
+			buildConfigurationList = 941B6D4B2EF5944900F8132B /* Build configuration list for PBXNativeTarget "Bone" */;
 			buildPhases = (
 				941B6D1B2EF5944300F8132B /* Sources */,
 				941B6D1C2EF5944300F8132B /* Frameworks */,
@@ -208,16 +208,16 @@
 			);
 			dependencies = (
 			);
-			name = bone;
+			name = Bone;
 			packageProductDependencies = (
 			);
 			productName = bone;
-			productReference = 941B6D1F2EF5944300F8132B /* bone.app */;
+			productReference = 941B6D1F2EF5944300F8132B /* Bone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		941B6D372EF5944900F8132B /* boneTests */ = {
+		941B6D372EF5944900F8132B /* BoneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 941B6D502EF5944900F8132B /* Build configuration list for PBXNativeTarget "boneTests" */;
+			buildConfigurationList = 941B6D502EF5944900F8132B /* Build configuration list for PBXNativeTarget "BoneTests" */;
 			buildPhases = (
 				941B6D342EF5944900F8132B /* Sources */,
 				941B6D352EF5944900F8132B /* Frameworks */,
@@ -229,18 +229,18 @@
 				941B6D3A2EF5944900F8132B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				941B6D3B2EF5944900F8132B /* boneTests */,
+				941B6D3B2EF5944900F8132B /* BoneTests */,
 			);
-			name = boneTests;
+			name = BoneTests;
 			packageProductDependencies = (
 			);
 			productName = boneTests;
-			productReference = 941B6D382EF5944900F8132B /* boneTests.xctest */;
+			productReference = 941B6D382EF5944900F8132B /* BoneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		941B6D412EF5944900F8132B /* boneUITests */ = {
+		941B6D412EF5944900F8132B /* BoneUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 941B6D532EF5944900F8132B /* Build configuration list for PBXNativeTarget "boneUITests" */;
+			buildConfigurationList = 941B6D532EF5944900F8132B /* Build configuration list for PBXNativeTarget "BoneUITests" */;
 			buildPhases = (
 				941B6D3E2EF5944900F8132B /* Sources */,
 				941B6D3F2EF5944900F8132B /* Frameworks */,
@@ -252,13 +252,13 @@
 				941B6D442EF5944900F8132B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				941B6D452EF5944900F8132B /* boneUITests */,
+				941B6D452EF5944900F8132B /* BoneUITests */,
 			);
-			name = boneUITests;
+			name = BoneUITests;
 			packageProductDependencies = (
 			);
 			productName = boneUITests;
-			productReference = 941B6D422EF5944900F8132B /* boneUITests.xctest */;
+			productReference = 941B6D422EF5944900F8132B /* BoneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -284,7 +284,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 941B6D1A2EF5944300F8132B /* Build configuration list for PBXProject "bone" */;
+			buildConfigurationList = 941B6D1A2EF5944300F8132B /* Build configuration list for PBXProject "Bone" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -300,9 +300,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				941B6D1E2EF5944300F8132B /* bone */,
-				941B6D372EF5944900F8132B /* boneTests */,
-				941B6D412EF5944900F8132B /* boneUITests */,
+				941B6D1E2EF5944300F8132B /* Bone */,
+				941B6D372EF5944900F8132B /* BoneTests */,
+				941B6D412EF5944900F8132B /* BoneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +345,7 @@
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
 				941B6E112EF5B48A00F8132B /* CommUtil.swift in Sources */,
 				941B6E122EF5B48A00F8132B /* I18N.swift in Sources */,
-				941B6E132EF5B48A00F8132B /* bone.xcdatamodeld in Sources */,
+				941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */,
 				941B6E142EF5B48A00F8132B /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,12 +369,12 @@
 /* Begin PBXTargetDependency section */
 		941B6D3A2EF5944900F8132B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 941B6D1E2EF5944300F8132B /* bone */;
+			target = 941B6D1E2EF5944300F8132B /* Bone */;
 			targetProxy = 941B6D392EF5944900F8132B /* PBXContainerItemProxy */;
 		};
 		941B6D442EF5944900F8132B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 941B6D1E2EF5944300F8132B /* bone */;
+			target = 941B6D1E2EF5944300F8132B /* Bone */;
 			targetProxy = 941B6D432EF5944900F8132B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -409,7 +409,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = bone/Info.plist;
+				INFOPLIST_FILE = Bone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -442,7 +442,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = bone/Info.plist;
+				INFOPLIST_FILE = Bone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -597,7 +597,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pky.boneTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pky.BoneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -605,7 +605,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bone";
 			};
 			name = Debug;
 		};
@@ -619,7 +619,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pky.boneTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pky.BoneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -627,7 +627,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/bone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/bone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bone";
 			};
 			name = Release;
 		};
@@ -639,7 +639,7 @@
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pky.boneUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pky.BoneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -647,7 +647,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = bone;
+				TEST_TARGET_NAME = Bone;
 			};
 			name = Debug;
 		};
@@ -659,7 +659,7 @@
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pky.boneUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pky.BoneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -667,14 +667,14 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = bone;
+				TEST_TARGET_NAME = Bone;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		941B6D1A2EF5944300F8132B /* Build configuration list for PBXProject "bone" */ = {
+		941B6D1A2EF5944300F8132B /* Build configuration list for PBXProject "Bone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				941B6D4E2EF5944900F8132B /* Debug */,
@@ -683,7 +683,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		941B6D4B2EF5944900F8132B /* Build configuration list for PBXNativeTarget "bone" */ = {
+		941B6D4B2EF5944900F8132B /* Build configuration list for PBXNativeTarget "Bone" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				941B6D4C2EF5944900F8132B /* Debug */,
@@ -692,7 +692,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		941B6D502EF5944900F8132B /* Build configuration list for PBXNativeTarget "boneTests" */ = {
+		941B6D502EF5944900F8132B /* Build configuration list for PBXNativeTarget "BoneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				941B6D512EF5944900F8132B /* Debug */,
@@ -701,7 +701,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		941B6D532EF5944900F8132B /* Build configuration list for PBXNativeTarget "boneUITests" */ = {
+		941B6D532EF5944900F8132B /* Build configuration list for PBXNativeTarget "BoneUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				941B6D542EF5944900F8132B /* Debug */,
@@ -713,13 +713,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		941B6E052EF5B48A00F8132B /* bone.xcdatamodeld */ = {
+		941B6E052EF5B48A00F8132B /* Bone.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				941B6E0E2EF5B48A00F8132B /* bone.xcdatamodel */,
+				941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */,
 			);
-			currentVersion = 941B6E0E2EF5B48A00F8132B /* bone.xcdatamodel */;
-			path = bone.xcdatamodeld;
+			currentVersion = 941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */;
+			path = Bone.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
