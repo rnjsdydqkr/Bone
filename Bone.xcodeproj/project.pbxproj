@@ -16,7 +16,7 @@
 		941B6E152EF5B48A00F8132B /* i18n.sh in Resources */ = {isa = PBXBuildFile; fileRef = 941B6DFD2EF5B48A00F8132B /* i18n.sh */; };
 		941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E012EF5B48A00F8132B /* Localizable.strings */; };
 		941B6E172EF5B48A00F8132B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E042EF5B48A00F8132B /* Assets.xcassets */; };
-		941B6E1A2EF5B48A00F8132B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E0A2EF5B48A00F8132B /* Main.storyboard */; };
+		941B6E1A2EF5B48A00F8132B /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E0A2EF5B48A00F8132B /* SplashViewController.storyboard */; };
 		941B6E1B2EF5B48A00F8132B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E0B2EF5B48A00F8132B /* README.md */; };
 		941B6E6B2EF92DE700F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; };
 		941B6E6C2EF92DE700F8132B /* KYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -67,7 +67,7 @@
 		941B6E002EF5B48A00F8132B /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		941B6E042EF5B48A00F8132B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		941B6E062EF5B48A00F8132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		941B6E092EF5B48A00F8132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		941B6E092EF5B48A00F8132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashViewController.storyboard; sourceTree = "<group>"; };
 		941B6E0B2EF5B48A00F8132B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		941B6E0C2EF5B48A00F8132B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
@@ -226,6 +226,7 @@
 		941B6E8B2EFA33D400F8132B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				94EDA0F92EFA580D00E65D21 /* common */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -268,11 +269,18 @@
 		941B6E912EFA34BF00F8132B /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				941B6E0A2EF5B48A00F8132B /* Main.storyboard */,
+				941B6E0A2EF5B48A00F8132B /* SplashViewController.storyboard */,
 				941B6E0C2EF5B48A00F8132B /* SplashViewController.swift */,
 				941B6E922EFA352200F8132B /* SplashViewModel.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		94EDA0F92EFA580D00E65D21 /* common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,7 +406,7 @@
 				941B6E152EF5B48A00F8132B /* i18n.sh in Resources */,
 				941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */,
 				941B6E172EF5B48A00F8132B /* Assets.xcassets in Resources */,
-				941B6E1A2EF5B48A00F8132B /* Main.storyboard in Resources */,
+				941B6E1A2EF5B48A00F8132B /* SplashViewController.storyboard in Resources */,
 				941B6E1B2EF5B48A00F8132B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,12 +481,12 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		941B6E0A2EF5B48A00F8132B /* Main.storyboard */ = {
+		941B6E0A2EF5B48A00F8132B /* SplashViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				941B6E092EF5B48A00F8132B /* Base */,
 			);
-			name = Main.storyboard;
+			name = SplashViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
