@@ -12,7 +12,7 @@
 		941B6E112EF5B48A00F8132B /* CommUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6DFB2EF5B48A00F8132B /* CommUtil.swift */; };
 		941B6E122EF5B48A00F8132B /* I18N.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6DFE2EF5B48A00F8132B /* I18N.swift */; };
 		941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E052EF5B48A00F8132B /* Bone.xcdatamodeld */; };
-		941B6E142EF5B48A00F8132B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E0C2EF5B48A00F8132B /* ViewController.swift */; };
+		941B6E142EF5B48A00F8132B /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E0C2EF5B48A00F8132B /* SplashViewController.swift */; };
 		941B6E152EF5B48A00F8132B /* i18n.sh in Resources */ = {isa = PBXBuildFile; fileRef = 941B6DFD2EF5B48A00F8132B /* i18n.sh */; };
 		941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E012EF5B48A00F8132B /* Localizable.strings */; };
 		941B6E172EF5B48A00F8132B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E042EF5B48A00F8132B /* Assets.xcassets */; };
@@ -20,6 +20,7 @@
 		941B6E1B2EF5B48A00F8132B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 941B6E0B2EF5B48A00F8132B /* README.md */; };
 		941B6E6B2EF92DE700F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; };
 		941B6E6C2EF92DE700F8132B /* KYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E922EFA352200F8132B /* SplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +69,10 @@
 		941B6E062EF5B48A00F8132B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		941B6E092EF5B48A00F8132B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		941B6E0B2EF5B48A00F8132B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		941B6E0C2EF5B48A00F8132B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		941B6E0C2EF5B48A00F8132B /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
 		941B6E6A2EF92DE700F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		941B6E922EFA352200F8132B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -174,8 +176,9 @@
 			children = (
 				941B6E0B2EF5B48A00F8132B /* README.md */,
 				941B6DFA2EF5B48A00F8132B /* Delegate */,
-				941B6E0A2EF5B48A00F8132B /* Main.storyboard */,
-				941B6E0C2EF5B48A00F8132B /* ViewController.swift */,
+				941B6E892EFA1F7100F8132B /* Presentation */,
+				941B6E882EFA1F2F00F8132B /* Data */,
+				941B6E8A2EFA1F7500F8132B /* Domain */,
 				941B6E032EF5B48A00F8132B /* resource */,
 				941B6E042EF5B48A00F8132B /* Assets.xcassets */,
 				941B6E062EF5B48A00F8132B /* Info.plist */,
@@ -190,6 +193,86 @@
 				941B6E6A2EF92DE700F8132B /* KYKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		941B6E882EFA1F2F00F8132B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				941B6E902EFA347100F8132B /* Repository */,
+				941B6E8F2EFA345300F8132B /* Network */,
+				941B6E8E2EFA341100F8132B /* CoreData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		941B6E892EFA1F7100F8132B /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				941B6E912EFA34BF00F8132B /* Splash */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		941B6E8A2EFA1F7500F8132B /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				941B6E8D2EFA33F000F8132B /* RepositoryProtocol */,
+				941B6E8C2EFA33E400F8132B /* Usecase */,
+				941B6E8B2EFA33D400F8132B /* Entity */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		941B6E8B2EFA33D400F8132B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		941B6E8C2EFA33E400F8132B /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		941B6E8D2EFA33F000F8132B /* RepositoryProtocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepositoryProtocol;
+			sourceTree = "<group>";
+		};
+		941B6E8E2EFA341100F8132B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		941B6E8F2EFA345300F8132B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		941B6E902EFA347100F8132B /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		941B6E912EFA34BF00F8132B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				941B6E0A2EF5B48A00F8132B /* Main.storyboard */,
+				941B6E0C2EF5B48A00F8132B /* SplashViewController.swift */,
+				941B6E922EFA352200F8132B /* SplashViewModel.swift */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,9 +427,10 @@
 				941B6E0F2EF5B48A00F8132B /* AppDelegate.swift in Sources */,
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
 				941B6E112EF5B48A00F8132B /* CommUtil.swift in Sources */,
+				941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */,
 				941B6E122EF5B48A00F8132B /* I18N.swift in Sources */,
 				941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */,
-				941B6E142EF5B48A00F8132B /* ViewController.swift in Sources */,
+				941B6E142EF5B48A00F8132B /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
