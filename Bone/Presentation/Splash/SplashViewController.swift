@@ -23,7 +23,12 @@ final class SplashViewController: KYViewController {
     override func setupViewStyle() {
 			titleLabel.font = .font(fontName: .AppleSDGothicNeoBold, size: 20)
 			subTitleLabel.font = .font(fontName: .JetBrainsMonoBold, size: 20)
-			subTitleLabel.textColor = .black10
+			
+			print(BuildType.test)
+//			print(BuildType.dev.name)
+			print(BuildType.dev.url)
+			
+			print(BuildType.prod.url)
     }
     
     override func viewWillAppear(_ animated: Bool) {
