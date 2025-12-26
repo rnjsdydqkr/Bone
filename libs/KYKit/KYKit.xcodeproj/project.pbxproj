@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		941B6E322EF92A8D00F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E262EF92A8C00F8132B /* KYKit.framework */; };
+		94EDA1022EFA656D00E65D21 /* KYKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FF2EFA656D00E65D21 /* KYKit.docc */; };
+		94EDA1062EFA657400E65D21 /* KYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1042EFA657400E65D21 /* KYKitTests.swift */; };
+		94EDA10A2EFA663A00E65D21 /* KYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1092EFA663A00E65D21 /* KYViewController.swift */; };
+		94EDA1122EFA87BC00E65D21 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1112EFA87BC00E65D21 /* FontStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,20 +27,11 @@
 /* Begin PBXFileReference section */
 		941B6E262EF92A8C00F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E312EF92A8D00F8132B /* KYKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94EDA0FF2EFA656D00E65D21 /* KYKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KYKit.docc; sourceTree = "<group>"; };
+		94EDA1042EFA657400E65D21 /* KYKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYKitTests.swift; sourceTree = "<group>"; };
+		94EDA1092EFA663A00E65D21 /* KYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYViewController.swift; sourceTree = "<group>"; };
+		94EDA1112EFA87BC00E65D21 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		941B6E282EF92A8C00F8132B /* KYKit */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KYKit;
-			sourceTree = "<group>";
-		};
-		941B6E352EF92A8D00F8132B /* KYKitTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KYKitTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		941B6E232EF92A8C00F8132B /* Frameworks */ = {
@@ -60,8 +55,8 @@
 		941B6E1C2EF92A8C00F8132B = {
 			isa = PBXGroup;
 			children = (
-				941B6E282EF92A8C00F8132B /* KYKit */,
-				941B6E352EF92A8D00F8132B /* KYKitTests */,
+				94EDA1012EFA656D00E65D21 /* KYKit */,
+				94EDA1052EFA657400E65D21 /* KYKitTests */,
 				941B6E272EF92A8C00F8132B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +68,48 @@
 				941B6E312EF92A8D00F8132B /* KYKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		94EDA1012EFA656D00E65D21 /* KYKit */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1072EFA657700E65D21 /* UIKit */,
+				94EDA10B2EFA874300E65D21 /* Fonts */,
+				94EDA0FF2EFA656D00E65D21 /* KYKit.docc */,
+			);
+			path = KYKit;
+			sourceTree = "<group>";
+		};
+		94EDA1052EFA657400E65D21 /* KYKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1042EFA657400E65D21 /* KYKitTests.swift */,
+			);
+			path = KYKitTests;
+			sourceTree = "<group>";
+		};
+		94EDA1072EFA657700E65D21 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1092EFA663A00E65D21 /* KYViewController.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		94EDA10B2EFA874300E65D21 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1102EFA879800E65D21 /* Enum */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		94EDA1102EFA879800E65D21 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1112EFA87BC00E65D21 /* FontStyle.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,9 +138,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				941B6E282EF92A8C00F8132B /* KYKit */,
-			);
 			name = KYKit;
 			packageProductDependencies = (
 			);
@@ -123,9 +157,6 @@
 			);
 			dependencies = (
 				941B6E342EF92A8D00F8132B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				941B6E352EF92A8D00F8132B /* KYKitTests */,
 			);
 			name = KYKitTests;
 			packageProductDependencies = (
@@ -194,6 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EDA10A2EFA663A00E65D21 /* KYViewController.swift in Sources */,
+				94EDA1022EFA656D00E65D21 /* KYKit.docc in Sources */,
+				94EDA1122EFA87BC00E65D21 /* FontStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EDA1062EFA657400E65D21 /* KYKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,5 +21,12 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>JetBrainsMono-Light.otf</string>
+		<string>JetBrainsMono-Regular.otf</string>
+		<string>JetBrainsMono-Medium.otf</string>
+		<string>JetBrainsMono-Bold.otf</string>
+	</array>
 </dict>
 </plist>

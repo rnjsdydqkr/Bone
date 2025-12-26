@@ -21,6 +21,12 @@
 		941B6E6B2EF92DE700F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; };
 		941B6E6C2EF92DE700F8132B /* KYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E922EFA352200F8132B /* SplashViewModel.swift */; };
+		94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FA2EFA58CB00E65D21 /* NetworkError.swift */; };
+		94EDA0FD2EFA58FC00E65D21 /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FC2EFA58F500E65D21 /* CoreDataError.swift */; };
+		94EDA12D2EFE32D500E65D21 /* JetBrainsMono-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EDA1292EFE32D500E65D21 /* JetBrainsMono-Light.otf */; };
+		94EDA12E2EFE32D500E65D21 /* JetBrainsMono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EDA12A2EFE32D500E65D21 /* JetBrainsMono-Regular.otf */; };
+		94EDA12F2EFE32D500E65D21 /* JetBrainsMono-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EDA12B2EFE32D500E65D21 /* JetBrainsMono-Medium.otf */; };
+		94EDA1302EFE32D500E65D21 /* JetBrainsMono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EDA12C2EFE32D500E65D21 /* JetBrainsMono-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +79,12 @@
 		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
 		941B6E6A2EF92DE700F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E922EFA352200F8132B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		94EDA0FA2EFA58CB00E65D21 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		94EDA0FC2EFA58F500E65D21 /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
+		94EDA1292EFE32D500E65D21 /* JetBrainsMono-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Light.otf"; sourceTree = "<group>"; };
+		94EDA12A2EFE32D500E65D21 /* JetBrainsMono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Regular.otf"; sourceTree = "<group>"; };
+		94EDA12B2EFE32D500E65D21 /* JetBrainsMono-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Medium.otf"; sourceTree = "<group>"; };
+		94EDA12C2EFE32D500E65D21 /* JetBrainsMono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -167,6 +179,7 @@
 			children = (
 				941B6E022EF5B48A00F8132B /* strings */,
 				941B6DFC2EF5B48A00F8132B /* common */,
+				94EDA1272EFE32A700E65D21 /* Fonts */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -279,8 +292,37 @@
 		94EDA0F92EFA580D00E65D21 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				94EDA0FA2EFA58CB00E65D21 /* NetworkError.swift */,
+				94EDA0FC2EFA58F500E65D21 /* CoreDataError.swift */,
 			);
 			path = common;
+			sourceTree = "<group>";
+		};
+		94EDA1272EFE32A700E65D21 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1282EFE32CB00E65D21 /* oft */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		94EDA1282EFE32CB00E65D21 /* oft */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1312EFE333A00E65D21 /* JetBrainsMono */,
+			);
+			path = oft;
+			sourceTree = "<group>";
+		};
+		94EDA1312EFE333A00E65D21 /* JetBrainsMono */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1292EFE32D500E65D21 /* JetBrainsMono-Light.otf */,
+				94EDA12A2EFE32D500E65D21 /* JetBrainsMono-Regular.otf */,
+				94EDA12B2EFE32D500E65D21 /* JetBrainsMono-Medium.otf */,
+				94EDA12C2EFE32D500E65D21 /* JetBrainsMono-Bold.otf */,
+			);
+			path = JetBrainsMono;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +445,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EDA12D2EFE32D500E65D21 /* JetBrainsMono-Light.otf in Resources */,
+				94EDA12E2EFE32D500E65D21 /* JetBrainsMono-Regular.otf in Resources */,
+				94EDA12F2EFE32D500E65D21 /* JetBrainsMono-Medium.otf in Resources */,
+				94EDA1302EFE32D500E65D21 /* JetBrainsMono-Bold.otf in Resources */,
 				941B6E152EF5B48A00F8132B /* i18n.sh in Resources */,
 				941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */,
 				941B6E172EF5B48A00F8132B /* Assets.xcassets in Resources */,
@@ -433,9 +479,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				941B6E0F2EF5B48A00F8132B /* AppDelegate.swift in Sources */,
+				94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */,
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
 				941B6E112EF5B48A00F8132B /* CommUtil.swift in Sources */,
 				941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */,
+				94EDA0FD2EFA58FC00E65D21 /* CoreDataError.swift in Sources */,
 				941B6E122EF5B48A00F8132B /* I18N.swift in Sources */,
 				941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */,
 				941B6E142EF5B48A00F8132B /* SplashViewController.swift in Sources */,
