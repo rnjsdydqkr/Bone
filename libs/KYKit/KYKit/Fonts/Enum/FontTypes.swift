@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum FontStyle {
+public enum FontTypes {
   case AcademyEngravedLetPlain
   case AlNile
   case AlNileBold

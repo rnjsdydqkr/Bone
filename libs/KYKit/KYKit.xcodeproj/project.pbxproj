@@ -11,7 +11,10 @@
 		94EDA1022EFA656D00E65D21 /* KYKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FF2EFA656D00E65D21 /* KYKit.docc */; };
 		94EDA1062EFA657400E65D21 /* KYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1042EFA657400E65D21 /* KYKitTests.swift */; };
 		94EDA10A2EFA663A00E65D21 /* KYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1092EFA663A00E65D21 /* KYViewController.swift */; };
-		94EDA1122EFA87BC00E65D21 /* FontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1112EFA87BC00E65D21 /* FontStyle.swift */; };
+		94EDA1122EFA87BC00E65D21 /* FontTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1112EFA87BC00E65D21 /* FontTypes.swift */; };
+		94EDA1362EFE380900E65D21 /* UIFont+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1352EFE37FE00E65D21 /* UIFont+Enum.swift */; };
+		94EDA1392EFE3EB100E65D21 /* UIColor+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1382EFE3E9900E65D21 /* UIColor+Enum.swift */; };
+		94EDA13C2EFE458600E65D21 /* BuildType+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA13B2EFE454D00E65D21 /* BuildType+Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +33,10 @@
 		94EDA0FF2EFA656D00E65D21 /* KYKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KYKit.docc; sourceTree = "<group>"; };
 		94EDA1042EFA657400E65D21 /* KYKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYKitTests.swift; sourceTree = "<group>"; };
 		94EDA1092EFA663A00E65D21 /* KYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYViewController.swift; sourceTree = "<group>"; };
-		94EDA1112EFA87BC00E65D21 /* FontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyle.swift; sourceTree = "<group>"; };
+		94EDA1112EFA87BC00E65D21 /* FontTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTypes.swift; sourceTree = "<group>"; };
+		94EDA1352EFE37FE00E65D21 /* UIFont+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Enum.swift"; sourceTree = "<group>"; };
+		94EDA1382EFE3E9900E65D21 /* UIColor+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Enum.swift"; sourceTree = "<group>"; };
+		94EDA13B2EFE454D00E65D21 /* BuildType+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildType+Enum.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +97,9 @@
 		94EDA1072EFA657700E65D21 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				94EDA1092EFA663A00E65D21 /* KYViewController.swift */,
+				94EDA1332EFE35C800E65D21 /* ViewController */,
+				94EDA1342EFE35E200E65D21 /* Views */,
+				94EDA13A2EFE450700E65D21 /* ServerTarget */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 		94EDA10B2EFA874300E65D21 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				94EDA1322EFE353500E65D21 /* Components */,
 				94EDA1102EFA879800E65D21 /* Enum */,
 			);
 			path = Fonts;
@@ -107,9 +116,41 @@
 		94EDA1102EFA879800E65D21 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				94EDA1112EFA87BC00E65D21 /* FontStyle.swift */,
+				94EDA1112EFA87BC00E65D21 /* FontTypes.swift */,
 			);
 			path = Enum;
+			sourceTree = "<group>";
+		};
+		94EDA1322EFE353500E65D21 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1352EFE37FE00E65D21 /* UIFont+Enum.swift */,
+				94EDA1382EFE3E9900E65D21 /* UIColor+Enum.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		94EDA1332EFE35C800E65D21 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1092EFA663A00E65D21 /* KYViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		94EDA1342EFE35E200E65D21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		94EDA13A2EFE450700E65D21 /* ServerTarget */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA13B2EFE454D00E65D21 /* BuildType+Enum.swift */,
+			);
+			path = ServerTarget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EDA1362EFE380900E65D21 /* UIFont+Enum.swift in Sources */,
+				94EDA13C2EFE458600E65D21 /* BuildType+Enum.swift in Sources */,
 				94EDA10A2EFA663A00E65D21 /* KYViewController.swift in Sources */,
 				94EDA1022EFA656D00E65D21 /* KYKit.docc in Sources */,
-				94EDA1122EFA87BC00E65D21 /* FontStyle.swift in Sources */,
+				94EDA1122EFA87BC00E65D21 /* FontTypes.swift in Sources */,
+				94EDA1392EFE3EB100E65D21 /* UIColor+Enum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

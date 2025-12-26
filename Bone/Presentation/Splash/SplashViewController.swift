@@ -8,7 +8,7 @@
 import UIKit
 import KYKit
 
-class SplashViewController: KYViewController {
+final class SplashViewController: KYViewController {
     
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var subTitleLabel: UILabel!
@@ -21,8 +21,9 @@ class SplashViewController: KYViewController {
     }
     
     override func setupViewStyle() {
-			titleLabel.font = UIFont(name: FontStyle.AmericanTypewriterBold.name, size: 20)
-			subTitleLabel.font = UIFont(name: FontStyle.JetBrainsMonoBold.name, size: 20)
+			titleLabel.font = .font(fontName: .AppleSDGothicNeoBold, size: 20)
+			subTitleLabel.font = .font(fontName: .JetBrainsMonoBold, size: 20)
+			subTitleLabel.textColor = .black10
     }
     
     override func viewWillAppear(_ animated: Bool) {
