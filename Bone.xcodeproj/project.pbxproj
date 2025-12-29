@@ -30,6 +30,7 @@
 		94EDA1422EFE657B00E65D21 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1412EFE655F00E65D21 /* NotificationName.swift */; };
 		94EDA1452EFE746200E65D21 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1442EFE742300E65D21 /* AppInfo.swift */; };
 		94EDA1472EFE77EA00E65D21 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1462EFE77C100E65D21 /* Codable+Extension.swift */; };
+		94F8AD9C2F020BFD0074E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		94EDA1412EFE655F00E65D21 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		94EDA1442EFE742300E65D21 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		94EDA1462EFE77C100E65D21 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -203,6 +205,7 @@
 				941B6E042EF5B48A00F8132B /* Assets.xcassets */,
 				941B6E062EF5B48A00F8132B /* Info.plist */,
 				941B6E052EF5B48A00F8132B /* Bone.xcdatamodeld */,
+				94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */,
 			);
 			path = Bone;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */,
 				941B6E172EF5B48A00F8132B /* Assets.xcassets in Resources */,
 				941B6E1A2EF5B48A00F8132B /* SplashViewController.storyboard in Resources */,
+				94F8AD9C2F020BFD0074E6D6 /* LaunchScreen.storyboard in Resources */,
 				941B6E1B2EF5B48A00F8132B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
