@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="Bone" customModuleProvider="target">
             <connections>
+                <outlet property="moveScreenButton" destination="tkI-Zb-gST" id="WNG-cb-Arp"/>
+                <outlet property="moveScreenTwoButton" destination="pAD-BJ-WRb" id="MGR-mn-hYc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +20,43 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg7-Be-tp1">
+                    <rect key="frame" x="100" y="168" width="193" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkI-Zb-gST">
+                    <rect key="frame" x="100" y="239" width="193" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="EcN-9B-SL8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pAD-BJ-WRb">
+                    <rect key="frame" x="100" y="324" width="193" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="amU-uO-eSG"/>
+                    </connections>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="cg7-Be-tp1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="5Ey-ph-nJh"/>
+                <constraint firstItem="pAD-BJ-WRb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="CH9-A7-dkP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cg7-Be-tp1" secondAttribute="trailing" constant="100" id="F1b-1O-tos"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pAD-BJ-WRb" secondAttribute="trailing" constant="100" id="Njw-VF-QC3"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tkI-Zb-gST" secondAttribute="trailing" constant="100" id="Smd-MT-K2P"/>
+                <constraint firstItem="cg7-Be-tp1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="YUy-7W-e32"/>
+                <constraint firstItem="tkI-Zb-gST" firstAttribute="top" secondItem="cg7-Be-tp1" secondAttribute="bottom" constant="50" id="hPS-IR-Oop"/>
+                <constraint firstItem="tkI-Zb-gST" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="iyt-G9-d3h"/>
+                <constraint firstItem="pAD-BJ-WRb" firstAttribute="top" secondItem="tkI-Zb-gST" secondAttribute="bottom" constant="50" id="pnE-w4-cWR"/>
+            </constraints>
             <point key="canvasLocation" x="141" y="88"/>
         </view>
     </objects>

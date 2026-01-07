@@ -26,7 +26,13 @@ final class SplashViewController: KYViewController {
 		VCStackDebugger.printNavigationStack(label: "Splash")
 		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "Splash")
 		
-		viewModel.changeScreen()
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		Task {
+			await viewModel.delaySplash(.main)
+		}
 	}
 
 }

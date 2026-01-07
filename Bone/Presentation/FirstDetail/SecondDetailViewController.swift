@@ -1,39 +1,35 @@
 //
-//  MainViewController.swift
+//  SecondDetailViewController.swift
 //  Bone
 //
-//  Created by 박권용 on 12/29/25.
+//  Created by 박권용 on 1/7/26.
 //
 
 import UIKit
-import KYKit
 
-final class MainViewController: KYViewController {
+class SecondDetailViewController: UIViewController {
 	
 	@IBOutlet private weak var moveScreenButton: UIButton!
 	@IBOutlet private weak var moveScreenTwoButton: UIButton!
 	
-	let viewModel = MainViewModel()
+	let viewModel = SecondDetailViewModel()
 
 	override func viewDidLoad() {
-		super.viewDidLoad()
+			super.viewDidLoad()
+
 	}
-	
+
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		VCStackDebugger.printNavigationStack(label: "Main")
-		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "Main")
-		VCStackDebugger.printPresentStack(label: "Main")
+		VCStackDebugger.printNavigationStack(label: "SecondDetail")
+		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "SecondDetail")
+		VCStackDebugger.printPresentStack(label: "SecondDetail")
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 			super.viewDidAppear(animated)
-			VCStackDebugger.printVisibleViewController(label: "Main")
-	}
-	
-	override func setupViewStyle() {
-
+			VCStackDebugger.printVisibleViewController(label: "SecondDetail")
 	}
 	
 	@IBAction func didTapButton(_ sender: UIButton) {
@@ -52,6 +48,16 @@ final class MainViewController: KYViewController {
 	private func moveNavSecondDetailVC() {
 		let vc = viewModel.makeSecondDetailVC()
 		self.navigationController?.pushViewController(vc, animated: true)
+	}
+	
+	private func moveThirdDetailVC() {
+		let vc = viewModel.makeThirdDetailVC()
+		self.present(vc, animated: true)
+	}
+	
+	private func moveFourDetailVC() {
+		let vc = viewModel.makeFourDetailVC()
+		self.present(vc, animated: true)
 	}
 
 }

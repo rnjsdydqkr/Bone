@@ -55,7 +55,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 																			transitionDuration: TimeInterval = 0.3,
 																			transitionStyle: UIView.AnimationOptions = .transitionCrossDissolve) {
 		guard let window = self.window else { return }
-		window.rootViewController = vc
+		let navVC = UINavigationController(rootViewController: vc)
+		window.rootViewController = navVC
 		
 		UIView.transition(with: window, duration: transitionDuration, options: transitionStyle, animations: nil)
 		

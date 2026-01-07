@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Bone" customModuleProvider="target">
             <connections>
+                <outlet property="cancelButton" destination="VVx-fk-jHR" id="vBW-0B-7ey"/>
+                <outlet property="confirmButton" destination="Vy0-ff-6fE" id="4XM-Uq-KZQ"/>
+                <outlet property="subTitleLabel" destination="mq5-Jc-JGe" id="mDD-gO-MQK"/>
+                <outlet property="titleLabel" destination="70o-hZ-KJ2" id="38b-1v-t1h"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +22,46 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="70o-hZ-KJ2">
+                    <rect key="frame" x="100" y="168" width="193" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-Jc-JGe">
+                    <rect key="frame" x="100" y="239" width="193" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vy0-ff-6fE">
+                    <rect key="frame" x="100" y="310" width="193" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVx-fk-jHR">
+                    <rect key="frame" x="100" y="395" width="193" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="70o-hZ-KJ2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="0st-Yr-qQM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mq5-Jc-JGe" secondAttribute="trailing" constant="100" id="4DJ-fj-8pZ"/>
+                <constraint firstItem="mq5-Jc-JGe" firstAttribute="top" secondItem="70o-hZ-KJ2" secondAttribute="bottom" constant="50" id="9V8-sp-Xmk"/>
+                <constraint firstItem="VVx-fk-jHR" firstAttribute="top" secondItem="Vy0-ff-6fE" secondAttribute="bottom" constant="50" id="CoC-cb-04m"/>
+                <constraint firstItem="Vy0-ff-6fE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="DzJ-ct-4nw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="70o-hZ-KJ2" secondAttribute="trailing" constant="100" id="EXf-tY-OzQ"/>
+                <constraint firstItem="Vy0-ff-6fE" firstAttribute="top" secondItem="mq5-Jc-JGe" secondAttribute="bottom" constant="50" id="EdH-Dn-WDv"/>
+                <constraint firstItem="VVx-fk-jHR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="Eoo-cN-g6h"/>
+                <constraint firstItem="mq5-Jc-JGe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="NDv-CZ-oZx"/>
+                <constraint firstItem="70o-hZ-KJ2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="T0n-EF-8sC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VVx-fk-jHR" secondAttribute="trailing" constant="100" id="cTk-6J-u6A"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Vy0-ff-6fE" secondAttribute="trailing" constant="100" id="g0f-8v-GhG"/>
+            </constraints>
             <point key="canvasLocation" x="141" y="88"/>
         </view>
     </objects>

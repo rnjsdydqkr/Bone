@@ -42,6 +42,18 @@
 		94EDA1452EFE746200E65D21 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1442EFE742300E65D21 /* AppInfo.swift */; };
 		94EDA1472EFE77EA00E65D21 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1462EFE77C100E65D21 /* Codable+Extension.swift */; };
 		94EE2F192F0DFE6B0064F678 /* VCStackDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F172F0DFE6B0064F678 /* VCStackDebugger.swift */; };
+		94EE2F202F0E16640064F678 /* FirstDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F1E2F0E16640064F678 /* FirstDetailViewController.swift */; };
+		94EE2F212F0E16640064F678 /* FirstDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EE2F1F2F0E16640064F678 /* FirstDetailViewController.xib */; };
+		94EE2F242F0E16800064F678 /* SecondDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F222F0E16800064F678 /* SecondDetailViewController.swift */; };
+		94EE2F252F0E16800064F678 /* SecondDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EE2F232F0E16800064F678 /* SecondDetailViewController.xib */; };
+		94EE2F282F0E16A00064F678 /* ThirdDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F262F0E16A00064F678 /* ThirdDetailViewController.swift */; };
+		94EE2F292F0E16A00064F678 /* ThirdDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EE2F272F0E16A00064F678 /* ThirdDetailViewController.xib */; };
+		94EE2F2C2F0E16C40064F678 /* FourDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94EE2F2B2F0E16C40064F678 /* FourDetailViewController.xib */; };
+		94EE2F2D2F0E16C40064F678 /* FourDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F2A2F0E16C40064F678 /* FourDetailViewController.swift */; };
+		94EE2F2F2F0E16D60064F678 /* FirstDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F2E2F0E16CD0064F678 /* FirstDetailViewModel.swift */; };
+		94EE2F312F0E16E80064F678 /* SecondDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F302F0E16DD0064F678 /* SecondDetailViewModel.swift */; };
+		94EE2F332F0E16F90064F678 /* ThirdDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F322F0E16F60064F678 /* ThirdDetailViewModel.swift */; };
+		94EE2F352F0E17080064F678 /* FourDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F342F0E17050064F678 /* FourDetailViewModel.swift */; };
 		94F8AD9C2F020BFD0074E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +128,18 @@
 		94EDA1442EFE742300E65D21 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		94EDA1462EFE77C100E65D21 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
 		94EE2F172F0DFE6B0064F678 /* VCStackDebugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStackDebugger.swift; sourceTree = "<group>"; };
+		94EE2F1E2F0E16640064F678 /* FirstDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailViewController.swift; sourceTree = "<group>"; };
+		94EE2F1F2F0E16640064F678 /* FirstDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstDetailViewController.xib; sourceTree = "<group>"; };
+		94EE2F222F0E16800064F678 /* SecondDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondDetailViewController.swift; path = Bone/Presentation/FirstDetail/SecondDetailViewController.swift; sourceTree = SOURCE_ROOT; };
+		94EE2F232F0E16800064F678 /* SecondDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SecondDetailViewController.xib; path = Bone/Presentation/FirstDetail/SecondDetailViewController.xib; sourceTree = SOURCE_ROOT; };
+		94EE2F262F0E16A00064F678 /* ThirdDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDetailViewController.swift; sourceTree = "<group>"; };
+		94EE2F272F0E16A00064F678 /* ThirdDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdDetailViewController.xib; sourceTree = "<group>"; };
+		94EE2F2A2F0E16C40064F678 /* FourDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourDetailViewController.swift; sourceTree = "<group>"; };
+		94EE2F2B2F0E16C40064F678 /* FourDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourDetailViewController.xib; sourceTree = "<group>"; };
+		94EE2F2E2F0E16CD0064F678 /* FirstDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstDetailViewModel.swift; sourceTree = "<group>"; };
+		94EE2F302F0E16DD0064F678 /* SecondDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDetailViewModel.swift; sourceTree = "<group>"; };
+		94EE2F322F0E16F60064F678 /* ThirdDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdDetailViewModel.swift; sourceTree = "<group>"; };
+		94EE2F342F0E17050064F678 /* FourDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourDetailViewModel.swift; sourceTree = "<group>"; };
 		94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +285,10 @@
 				94E008F32F023C4E00E7BA27 /* Permission */,
 				94E008F42F023C8000E7BA27 /* Login */,
 				94E008E92F02364300E7BA27 /* Main */,
+				94EE2F1A2F0E15E60064F678 /* FirstDetail */,
+				94EE2F1B2F0E16090064F678 /* SecondDetail */,
+				94EE2F1C2F0E16200064F678 /* ThirdDetail */,
+				94EE2F1D2F0E16400064F678 /* FourDetail */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -437,6 +465,46 @@
 			path = Debugger;
 			sourceTree = "<group>";
 		};
+		94EE2F1A2F0E15E60064F678 /* FirstDetail */ = {
+			isa = PBXGroup;
+			children = (
+				94EE2F1E2F0E16640064F678 /* FirstDetailViewController.swift */,
+				94EE2F2E2F0E16CD0064F678 /* FirstDetailViewModel.swift */,
+				94EE2F1F2F0E16640064F678 /* FirstDetailViewController.xib */,
+			);
+			path = FirstDetail;
+			sourceTree = "<group>";
+		};
+		94EE2F1B2F0E16090064F678 /* SecondDetail */ = {
+			isa = PBXGroup;
+			children = (
+				94EE2F222F0E16800064F678 /* SecondDetailViewController.swift */,
+				94EE2F302F0E16DD0064F678 /* SecondDetailViewModel.swift */,
+				94EE2F232F0E16800064F678 /* SecondDetailViewController.xib */,
+			);
+			path = SecondDetail;
+			sourceTree = "<group>";
+		};
+		94EE2F1C2F0E16200064F678 /* ThirdDetail */ = {
+			isa = PBXGroup;
+			children = (
+				94EE2F262F0E16A00064F678 /* ThirdDetailViewController.swift */,
+				94EE2F322F0E16F60064F678 /* ThirdDetailViewModel.swift */,
+				94EE2F272F0E16A00064F678 /* ThirdDetailViewController.xib */,
+			);
+			path = ThirdDetail;
+			sourceTree = "<group>";
+		};
+		94EE2F1D2F0E16400064F678 /* FourDetail */ = {
+			isa = PBXGroup;
+			children = (
+				94EE2F2A2F0E16C40064F678 /* FourDetailViewController.swift */,
+				94EE2F342F0E17050064F678 /* FourDetailViewModel.swift */,
+				94EE2F2B2F0E16C40064F678 /* FourDetailViewController.xib */,
+			);
+			path = FourDetail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -561,14 +629,18 @@
 				94EDA12E2EFE32D500E65D21 /* JetBrainsMono-Regular.otf in Resources */,
 				94EDA12F2EFE32D500E65D21 /* JetBrainsMono-Medium.otf in Resources */,
 				94EDA1302EFE32D500E65D21 /* JetBrainsMono-Bold.otf in Resources */,
+				94EE2F2C2F0E16C40064F678 /* FourDetailViewController.xib in Resources */,
 				941B6E152EF5B48A00F8132B /* i18n.sh in Resources */,
 				94E008F72F023CA300E7BA27 /* PermissionViewController.xib in Resources */,
+				94EE2F252F0E16800064F678 /* SecondDetailViewController.xib in Resources */,
 				94E008EC2F02367100E7BA27 /* MainViewController.xib in Resources */,
 				941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */,
 				941B6E172EF5B48A00F8132B /* Assets.xcassets in Resources */,
 				94E008FB2F023CBD00E7BA27 /* LoginViewController.xib in Resources */,
+				94EE2F292F0E16A00064F678 /* ThirdDetailViewController.xib in Resources */,
 				941B6E1A2EF5B48A00F8132B /* SplashViewController.storyboard in Resources */,
 				94F8AD9C2F020BFD0074E6D6 /* LaunchScreen.storyboard in Resources */,
+				94EE2F212F0E16640064F678 /* FirstDetailViewController.xib in Resources */,
 				941B6E1B2EF5B48A00F8132B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,22 +670,30 @@
 				94E008F82F023CA300E7BA27 /* PermissionViewController.swift in Sources */,
 				941B6E0F2EF5B48A00F8132B /* AppDelegate.swift in Sources */,
 				94E008FE2F023CF700E7BA27 /* PermissionViewModel.swift in Sources */,
+				94EE2F2F2F0E16D60064F678 /* FirstDetailViewModel.swift in Sources */,
 				94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */,
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
+				94EE2F332F0E16F90064F678 /* ThirdDetailViewModel.swift in Sources */,
 				94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */,
+				94EE2F242F0E16800064F678 /* SecondDetailViewController.swift in Sources */,
 				94E008EF2F02389000E7BA27 /* MainViewModel.swift in Sources */,
 				94EDA1452EFE746200E65D21 /* AppInfo.swift in Sources */,
 				941B6E112EF5B48A00F8132B /* CommUtil.swift in Sources */,
 				94E008ED2F02367100E7BA27 /* MainViewController.swift in Sources */,
+				94EE2F312F0E16E80064F678 /* SecondDetailViewModel.swift in Sources */,
 				941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */,
 				94EDA0FD2EFA58FC00E65D21 /* CoreDataError.swift in Sources */,
 				94E009032F023EDF00E7BA27 /* EntryScreenProvider.swift in Sources */,
+				94EE2F282F0E16A00064F678 /* ThirdDetailViewController.swift in Sources */,
 				94EDA1422EFE657B00E65D21 /* NotificationName.swift in Sources */,
 				94E008FC2F023CBD00E7BA27 /* LoginViewController.swift in Sources */,
+				94EE2F202F0E16640064F678 /* FirstDetailViewController.swift in Sources */,
+				94EE2F352F0E17080064F678 /* FourDetailViewModel.swift in Sources */,
 				94EE2F192F0DFE6B0064F678 /* VCStackDebugger.swift in Sources */,
 				941B6E122EF5B48A00F8132B /* I18N.swift in Sources */,
 				941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */,
 				94E009002F023D1A00E7BA27 /* LoginViewModel.swift in Sources */,
+				94EE2F2D2F0E16C40064F678 /* FourDetailViewController.swift in Sources */,
 				941B6E142EF5B48A00F8132B /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
