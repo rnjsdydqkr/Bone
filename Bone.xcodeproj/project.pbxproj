@@ -21,6 +21,17 @@
 		941B6E6B2EF92DE700F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; };
 		941B6E6C2EF92DE700F8132B /* KYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E922EFA352200F8132B /* SplashViewModel.swift */; };
+		94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */; };
+		94E008EC2F02367100E7BA27 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E008EB2F02367100E7BA27 /* MainViewController.xib */; };
+		94E008ED2F02367100E7BA27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008EA2F02367100E7BA27 /* MainViewController.swift */; };
+		94E008EF2F02389000E7BA27 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008EE2F02388800E7BA27 /* MainViewModel.swift */; };
+		94E008F72F023CA300E7BA27 /* PermissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E008F62F023CA300E7BA27 /* PermissionViewController.xib */; };
+		94E008F82F023CA300E7BA27 /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008F52F023CA300E7BA27 /* PermissionViewController.swift */; };
+		94E008FB2F023CBD00E7BA27 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E008FA2F023CBD00E7BA27 /* LoginViewController.xib */; };
+		94E008FC2F023CBD00E7BA27 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008F92F023CBD00E7BA27 /* LoginViewController.swift */; };
+		94E008FE2F023CF700E7BA27 /* PermissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008FD2F023CED00E7BA27 /* PermissionViewModel.swift */; };
+		94E009002F023D1A00E7BA27 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008FF2F023D1000E7BA27 /* LoginViewModel.swift */; };
+		94E009032F023EDF00E7BA27 /* EntryScreenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E009022F023E8400E7BA27 /* EntryScreenProvider.swift */; };
 		94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FA2EFA58CB00E65D21 /* NetworkError.swift */; };
 		94EDA0FD2EFA58FC00E65D21 /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FC2EFA58F500E65D21 /* CoreDataError.swift */; };
 		94EDA12D2EFE32D500E65D21 /* JetBrainsMono-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EDA1292EFE32D500E65D21 /* JetBrainsMono-Light.otf */; };
@@ -83,6 +94,17 @@
 		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
 		941B6E6A2EF92DE700F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E922EFA352200F8132B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYUserDefaults.swift; sourceTree = "<group>"; };
+		94E008EA2F02367100E7BA27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		94E008EB2F02367100E7BA27 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		94E008EE2F02388800E7BA27 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		94E008F52F023CA300E7BA27 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PermissionViewController.swift; path = Bone/Presentation/Main/PermissionViewController.swift; sourceTree = SOURCE_ROOT; };
+		94E008F62F023CA300E7BA27 /* PermissionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PermissionViewController.xib; path = Bone/Presentation/Main/PermissionViewController.xib; sourceTree = SOURCE_ROOT; };
+		94E008F92F023CBD00E7BA27 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		94E008FA2F023CBD00E7BA27 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		94E008FD2F023CED00E7BA27 /* PermissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewModel.swift; sourceTree = "<group>"; };
+		94E008FF2F023D1000E7BA27 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		94E009022F023E8400E7BA27 /* EntryScreenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryScreenProvider.swift; sourceTree = "<group>"; };
 		94EDA0FA2EFA58CB00E65D21 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		94EDA0FC2EFA58F500E65D21 /* CoreDataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataError.swift; sourceTree = "<group>"; };
 		94EDA1292EFE32D500E65D21 /* JetBrainsMono-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Light.otf"; sourceTree = "<group>"; };
@@ -232,7 +254,11 @@
 		941B6E892EFA1F7100F8132B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				94E009012F023E1F00E7BA27 /* Manager */,
 				941B6E912EFA34BF00F8132B /* Splash */,
+				94E008F32F023C4E00E7BA27 /* Permission */,
+				94E008F42F023C8000E7BA27 /* Login */,
+				94E008E92F02364300E7BA27 /* Main */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -293,11 +319,49 @@
 		941B6E912EFA34BF00F8132B /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				941B6E0A2EF5B48A00F8132B /* SplashViewController.storyboard */,
 				941B6E0C2EF5B48A00F8132B /* SplashViewController.swift */,
 				941B6E922EFA352200F8132B /* SplashViewModel.swift */,
+				941B6E0A2EF5B48A00F8132B /* SplashViewController.storyboard */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		94E008E92F02364300E7BA27 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				94E008EA2F02367100E7BA27 /* MainViewController.swift */,
+				94E008EE2F02388800E7BA27 /* MainViewModel.swift */,
+				94E008EB2F02367100E7BA27 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		94E008F32F023C4E00E7BA27 /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				94E008F52F023CA300E7BA27 /* PermissionViewController.swift */,
+				94E008FD2F023CED00E7BA27 /* PermissionViewModel.swift */,
+				94E008F62F023CA300E7BA27 /* PermissionViewController.xib */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
+		94E008F42F023C8000E7BA27 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				94E008F92F023CBD00E7BA27 /* LoginViewController.swift */,
+				94E008FF2F023D1000E7BA27 /* LoginViewModel.swift */,
+				94E008FA2F023CBD00E7BA27 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		94E009012F023E1F00E7BA27 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				94E009022F023E8400E7BA27 /* EntryScreenProvider.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		94EDA0F92EFA580D00E65D21 /* common */ = {
@@ -339,6 +403,7 @@
 		94EDA13F2EFE624D00E65D21 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
+				94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -486,8 +551,11 @@
 				94EDA12F2EFE32D500E65D21 /* JetBrainsMono-Medium.otf in Resources */,
 				94EDA1302EFE32D500E65D21 /* JetBrainsMono-Bold.otf in Resources */,
 				941B6E152EF5B48A00F8132B /* i18n.sh in Resources */,
+				94E008F72F023CA300E7BA27 /* PermissionViewController.xib in Resources */,
+				94E008EC2F02367100E7BA27 /* MainViewController.xib in Resources */,
 				941B6E162EF5B48A00F8132B /* Localizable.strings in Resources */,
 				941B6E172EF5B48A00F8132B /* Assets.xcassets in Resources */,
+				94E008FB2F023CBD00E7BA27 /* LoginViewController.xib in Resources */,
 				941B6E1A2EF5B48A00F8132B /* SplashViewController.storyboard in Resources */,
 				94F8AD9C2F020BFD0074E6D6 /* LaunchScreen.storyboard in Resources */,
 				941B6E1B2EF5B48A00F8132B /* README.md in Resources */,
@@ -516,16 +584,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				94EDA1472EFE77EA00E65D21 /* Codable+Extension.swift in Sources */,
+				94E008F82F023CA300E7BA27 /* PermissionViewController.swift in Sources */,
 				941B6E0F2EF5B48A00F8132B /* AppDelegate.swift in Sources */,
+				94E008FE2F023CF700E7BA27 /* PermissionViewModel.swift in Sources */,
 				94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */,
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
+				94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */,
+				94E008EF2F02389000E7BA27 /* MainViewModel.swift in Sources */,
 				94EDA1452EFE746200E65D21 /* AppInfo.swift in Sources */,
 				941B6E112EF5B48A00F8132B /* CommUtil.swift in Sources */,
+				94E008ED2F02367100E7BA27 /* MainViewController.swift in Sources */,
 				941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */,
 				94EDA0FD2EFA58FC00E65D21 /* CoreDataError.swift in Sources */,
+				94E009032F023EDF00E7BA27 /* EntryScreenProvider.swift in Sources */,
 				94EDA1422EFE657B00E65D21 /* NotificationName.swift in Sources */,
+				94E008FC2F023CBD00E7BA27 /* LoginViewController.swift in Sources */,
 				941B6E122EF5B48A00F8132B /* I18N.swift in Sources */,
 				941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */,
+				94E009002F023D1A00E7BA27 /* LoginViewModel.swift in Sources */,
 				941B6E142EF5B48A00F8132B /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,7 +668,7 @@
 				INFOPLIST_FILE = Bone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
@@ -625,7 +701,7 @@
 				INFOPLIST_FILE = Bone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = SplashViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.6;

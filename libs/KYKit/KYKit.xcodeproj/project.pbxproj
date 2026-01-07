@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		941B6E322EF92A8D00F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E262EF92A8C00F8132B /* KYKit.framework */; };
+		94E008F22F023AA200E7BA27 /* EntryScreenType+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008F12F023A6F00E7BA27 /* EntryScreenType+Enum.swift */; };
 		94EDA1022EFA656D00E65D21 /* KYKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FF2EFA656D00E65D21 /* KYKit.docc */; };
 		94EDA1062EFA657400E65D21 /* KYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1042EFA657400E65D21 /* KYKitTests.swift */; };
 		94EDA10A2EFA663A00E65D21 /* KYViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1092EFA663A00E65D21 /* KYViewController.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		941B6E262EF92A8C00F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E312EF92A8D00F8132B /* KYKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94E008F12F023A6F00E7BA27 /* EntryScreenType+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntryScreenType+Enum.swift"; sourceTree = "<group>"; };
 		94EDA0FF2EFA656D00E65D21 /* KYKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KYKit.docc; sourceTree = "<group>"; };
 		94EDA1042EFA657400E65D21 /* KYKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYKitTests.swift; sourceTree = "<group>"; };
 		94EDA1092EFA663A00E65D21 /* KYViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		94E008F02F023A3900E7BA27 /* LaunchType */ = {
+			isa = PBXGroup;
+			children = (
+				94E008F12F023A6F00E7BA27 /* EntryScreenType+Enum.swift */,
+			);
+			path = LaunchType;
+			sourceTree = "<group>";
+		};
 		94EDA1012EFA656D00E65D21 /* KYKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 			children = (
 				94EDA1332EFE35C800E65D21 /* ViewController */,
 				94EDA1342EFE35E200E65D21 /* Views */,
+				94E008F02F023A3900E7BA27 /* LaunchType */,
 				94EDA13A2EFE450700E65D21 /* ServerTarget */,
 			);
 			path = UIKit;
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E008F22F023AA200E7BA27 /* EntryScreenType+Enum.swift in Sources */,
 				94EDA1362EFE380900E65D21 /* UIFont+Extension.swift in Sources */,
 				94EDA13C2EFE458600E65D21 /* BuildType+Enum.swift in Sources */,
 				94EDA10A2EFA663A00E65D21 /* KYViewController.swift in Sources */,
