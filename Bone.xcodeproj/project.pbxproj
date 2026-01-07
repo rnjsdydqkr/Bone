@@ -41,6 +41,7 @@
 		94EDA1422EFE657B00E65D21 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1412EFE655F00E65D21 /* NotificationName.swift */; };
 		94EDA1452EFE746200E65D21 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1442EFE742300E65D21 /* AppInfo.swift */; };
 		94EDA1472EFE77EA00E65D21 /* Codable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1462EFE77C100E65D21 /* Codable+Extension.swift */; };
+		94EE2F192F0DFE6B0064F678 /* VCStackDebugger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F172F0DFE6B0064F678 /* VCStackDebugger.swift */; };
 		94F8AD9C2F020BFD0074E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +115,7 @@
 		94EDA1412EFE655F00E65D21 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		94EDA1442EFE742300E65D21 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
 		94EDA1462EFE77C100E65D21 /* Codable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extension.swift"; sourceTree = "<group>"; };
+		94EE2F172F0DFE6B0064F678 /* VCStackDebugger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCStackDebugger.swift; sourceTree = "<group>"; };
 		94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -411,6 +413,7 @@
 		94EDA1402EFE650000E65D21 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				94EE2F182F0DFE6B0064F678 /* Debugger */,
 				94EDA1442EFE742300E65D21 /* AppInfo.swift */,
 				94EDA1462EFE77C100E65D21 /* Codable+Extension.swift */,
 				94EDA1432EFE66AD00E65D21 /* Constant */,
@@ -424,6 +427,14 @@
 				94EDA1412EFE655F00E65D21 /* NotificationName.swift */,
 			);
 			path = Constant;
+			sourceTree = "<group>";
+		};
+		94EE2F182F0DFE6B0064F678 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+				94EE2F172F0DFE6B0064F678 /* VCStackDebugger.swift */,
+			);
+			path = Debugger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,6 +610,7 @@
 				94E009032F023EDF00E7BA27 /* EntryScreenProvider.swift in Sources */,
 				94EDA1422EFE657B00E65D21 /* NotificationName.swift in Sources */,
 				94E008FC2F023CBD00E7BA27 /* LoginViewController.swift in Sources */,
+				94EE2F192F0DFE6B0064F678 /* VCStackDebugger.swift in Sources */,
 				941B6E122EF5B48A00F8132B /* I18N.swift in Sources */,
 				941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */,
 				94E009002F023D1A00E7BA27 /* LoginViewModel.swift in Sources */,

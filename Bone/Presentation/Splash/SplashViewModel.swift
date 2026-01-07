@@ -11,6 +11,6 @@ import KYKit
 final class SplashViewModel: EntryScreenProvider {
 	
 	func changeScreen() {
-//		changeRootVC(.main)
+		changeRootVC(.main)
 	}
 }
