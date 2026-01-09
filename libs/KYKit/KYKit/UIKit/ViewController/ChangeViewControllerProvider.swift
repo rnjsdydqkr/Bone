@@ -22,9 +22,26 @@ public class ChangeViewControllerProvider {
 	}
 	
 	public func push(_ fromVC: UIViewController,
-						toVC: UIViewController,
-						animated: Bool? = true) {
-		fromVC.navigationController?.pushViewController(toVC, animated: true)
+									 toVC: UIViewController,
+									 animated: Bool? = true) {
+		guard let topVC = fromVC.navigationController?.topViewController,
+		 type(of: topVC) != type(of: toVC) else { return }
+	
+//			if let fromVCNaviController = fromVC.navigationController {
+//				for controller in fromVCNaviController.viewControllers {
+//					if type(of: controller) == type(of: toVC) {
+//						fromVC.navigationController?.popToViewController(controller, animated: animated!)
+//						return
+//					}
+//				}
+//			}
+//			fromVC.navigationController?.pushViewController(toVC, animated: animated!)
+	
+			if let prevToVC = fromVC.navigationController?.viewControllers.first(where: { type(of: $0) == type(of: toVC) }) {
+				fromVC.navigationController?.popToViewController(prevToVC, animated: animated!)
+			} else {
+				fromVC.navigationController?.pushViewController(toVC, animated: animated!)
+			}
 	}
 	
 }
