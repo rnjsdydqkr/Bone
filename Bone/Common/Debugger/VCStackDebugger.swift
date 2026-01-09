@@ -21,11 +21,11 @@ struct VCStackDebugger {
 			print("[\(label)] 네비게이션 컨트롤러가 존재하지 않습니다.")
 				return
 		}
-		print("[Stack] ===================================")
+		print("===================================")
 		for (index, vc) in viewControllers.enumerated() {
 				print("[\(label)] [\(index)] \(type(of: vc))")
 		}
-		print("[Stack] ===================================")
+		print("===================================")
 	}
 	/// 현재 Root부터 Present된 모든 뷰 컨트롤러 계층을 출력합니다.
 	static func printPresentStack(label: String = "Debug") {
@@ -35,7 +35,7 @@ struct VCStackDebugger {
 				return
 		}
 
-		print("[Stack] ===================================")
+		print("===================================")
 		print("[Stack] [Root]: \(type(of: currentVC))")
 
 		// presentedViewController가 nil이 아닐 때까지 계속 추적
@@ -43,7 +43,7 @@ struct VCStackDebugger {
 			currentVC = presentedVC
 			print("[Stack] [Presented]: \(type(of: presentedVC))")
 		}
-		print("[Stack] ===================================")
+		print("===================================")
 	}
 	
 	static func printVisibleViewController(label: String = "Debug") {

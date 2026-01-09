@@ -15,6 +15,6 @@ public extension SwipeDismissable where Self: UIViewController {
 	func setupDismissSwipeGesture(direction: UISwipeGestureRecognizer.Direction = .right) {
 		let swipe = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture))
 		swipe.direction = direction
-		swipe.view?.addGestureRecognizer(swipe)
+		self.view?.addGestureRecognizer(swipe)
 	}
 }

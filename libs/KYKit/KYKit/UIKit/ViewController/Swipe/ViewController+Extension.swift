@@ -7,8 +7,8 @@
 
 import UIKit
 
-extension UIViewController {
-	@objc public func handleSwipeGesture() {
+public extension UIViewController {
+	@objc func handleSwipeGesture() {
 		self.dismiss(animated: true)
 	}
 }
