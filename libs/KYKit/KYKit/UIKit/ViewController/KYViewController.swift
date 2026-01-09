@@ -10,12 +10,13 @@ import UIKit
 open class KYViewController: UIViewController, SwipeDismissable {
 
     open override func viewDidLoad() {
-        super.viewDidLoad()
+			super.viewDidLoad()
+			setupDismissSwipeGesture()
     }
     
     open override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        setupViewStyle()
+			super.viewWillAppear(animated)
+			setupViewStyle()
     }
     
     open func setupViewStyle() {}

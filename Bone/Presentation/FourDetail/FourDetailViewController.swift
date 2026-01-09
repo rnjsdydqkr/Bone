@@ -31,7 +31,6 @@ class FourDetailViewController: KYViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 			super.viewDidAppear(animated)
-		setupDismissSwipeGesture()
 	}
 	
 	@IBAction func didTapButton(_ sender: UIButton) {

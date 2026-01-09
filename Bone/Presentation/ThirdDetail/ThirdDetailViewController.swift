@@ -17,7 +17,6 @@ class ThirdDetailViewController: KYViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		setupDismissSwipeGesture()
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
@@ -31,7 +30,6 @@ class ThirdDetailViewController: KYViewController {
 	
 	override func viewDidAppear(_ animated: Bool) {
 			super.viewDidAppear(animated)
-		setupDismissSwipeGesture()
 	}
 	
 	@IBAction func didTapButton(_ sender: UIButton) {

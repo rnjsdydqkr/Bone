@@ -27,8 +27,4 @@ public class ChangeViewControllerProvider {
 		fromVC.navigationController?.pushViewController(toVC, animated: true)
 	}
 	
-	public func popToRoot() {
-		
-	}
-	
 }
