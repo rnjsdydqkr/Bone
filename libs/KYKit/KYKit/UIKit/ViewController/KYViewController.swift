@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class KYViewController: UIViewController {
+open class KYViewController: UIViewController, SwipeDismissable {
 
     open override func viewDidLoad() {
         super.viewDidLoad()

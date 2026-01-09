@@ -51,7 +51,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		(UIApplication.shared.delegate as? AppDelegate)?.saveContext()
 	}
 	
-	func changeRootNavigationController(_ vc: KYViewController,
+	func changeRootNavigationController(_ vc: UIViewController,
 																			transitionDuration: TimeInterval = 0.3,
 																			transitionStyle: UIView.AnimationOptions = .transitionCrossDissolve) {
 		guard let window = self.window else { return }

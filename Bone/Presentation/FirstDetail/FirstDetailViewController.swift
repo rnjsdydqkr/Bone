@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import KYKit
 
-class FirstDetailViewController: UIViewController {
+class FirstDetailViewController: KYViewController {
 	
 	@IBOutlet private weak var moveScreenButton: UIButton!
 	@IBOutlet private weak var moveScreenTwoButton: UIButton!
@@ -16,60 +17,40 @@ class FirstDetailViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		setGestureRecognizer()
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		VCStackDebugger.printNavigationStack(label: "FirstDetail")
-		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "FirstDetail")
-		VCStackDebugger.printPresentStack(label: "FirstDetail")
+		VCStackDebugger.printRootViewController(label: "[Stack] FirstDetail [RootVC]")
+		VCStackDebugger.printNavigationStack(nav: self.navigationController, label: "[Stack] FirstDetail [Navigation]")
+		VCStackDebugger.printPresentStack(label: "[Stack] FirstDetail [Present]")
+		VCStackDebugger.printVisibleViewController(label: "[Stack] FirstDetail [VisibleVC]")
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 			super.viewDidAppear(animated)
-			VCStackDebugger.printVisibleViewController(label: "FirstDetail")
+		setupDismissSwipeGesture()
 	}
 	
 	@IBAction func didTapButton(_ sender: UIButton) {
 		switch sender {
 		case moveScreenButton:
-			moveThirdDetailVC()
+			ChangeViewControllerProvider.shared.present(self, toVC: SecondDetailViewController())
 		case moveScreenTwoButton:
-			self.dismiss(animated: true, completion: nil)
+			ChangeViewControllerProvider.shared.push(self, toVC: SecondDetailViewController())
 		default: break
 		}
 	}
 	
-	private func moveFirstDetailVC() {
-		let vc = viewModel.makeFirstDetailVC()
-		self.present(vc, animated: true)
-	}
-	
-	private func moveNavSecondDetailVC() {
-		let vc = viewModel.makeSecondDetailVC()
-		self.navigationController?.pushViewController(vc, animated: true)
-	}
-	
-	private func moveThirdDetailVC() {
-		let vc = viewModel.makeThirdDetailVC()
-		self.present(vc, animated: true)
-	}
-	
-	private func moveFourDetailVC() {
-		let vc = viewModel.makeFourDetailVC()
-		self.present(vc, animated: true)
-	}
-	
-	private func setGestureRecognizer() {
-		let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
-		swipeDown.direction = .right
-		self.view.addGestureRecognizer(swipeDown)
-	}
-	
-	@objc func handleSwipe() {
-			self.dismiss(animated: true)
-	}
+//	private func setGestureRecognizer() {
+//		let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
+//		swipeDown.direction = .right
+//		self.view.addGestureRecognizer(swipeDown)
+//	}
+//	
+//	@objc func handleSwipe() {
+//			self.dismiss(animated: true)
+//	}
 
 }

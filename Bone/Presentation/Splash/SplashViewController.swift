@@ -10,6 +10,9 @@ import KYKit
 
 final class SplashViewController: KYViewController {
 	
+	@IBOutlet public weak var moveScreenButton: UIButton!
+	@IBOutlet public weak var moveScreenTwoButton: UIButton!
+	
 	private let viewModel = SplashViewModel()
 
 	override func viewDidLoad() {
@@ -23,8 +26,12 @@ final class SplashViewController: KYViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		VCStackDebugger.printNavigationStack(label: "Splash")
-		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "Splash")
+		VCStackDebugger.printRootViewController(label: "[Stack] Splash [RootVC]")
+		VCStackDebugger.printNavigationStack(nav: self.navigationController, label: "[Stack] Splash [Navigation]")
+		VCStackDebugger.printPresentStack(label: "[Stack] Splash [Present]")
+		VCStackDebugger.printVisibleViewController(label: "[Stack] Splash [VisibleVC]")
+		print("**************************************")
+		print("**************************************")
 		
 	}
 	
@@ -32,6 +39,14 @@ final class SplashViewController: KYViewController {
 		super.viewDidAppear(animated)
 		Task {
 			await viewModel.delaySplash(.main)
+		}
+	}
+	
+	@IBAction func didTapButton(_ sender: UIButton) {
+		switch sender {
+		case moveScreenButton: break
+		case moveScreenTwoButton: break
+		default: break
 		}
 	}
 

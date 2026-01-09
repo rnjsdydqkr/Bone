@@ -15,6 +15,10 @@ struct DidStartDataAction: Codable {
 
 class PermissionViewController: KYViewController {
 	
+	@IBOutlet public weak var moveScreenButton: UIButton!
+	@IBOutlet public weak var moveScreenTwoButton: UIButton!
+	@IBOutlet public weak var moveScreenThreeButton: UIButton!
+	
 	deinit {
 		stopObservation()
 	}
@@ -29,12 +33,26 @@ class PermissionViewController: KYViewController {
 		super.viewWillAppear(animated)
 		sendDataObserver()
 		
-		VCStackDebugger.printNavigationStack(label: "Permission")
-		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "Permission")
+		VCStackDebugger.printRootViewController(label: "[Stack] Permission [RootVC]")
+		VCStackDebugger.printNavigationStack(nav: self.navigationController, label: "[Stack] Permission [Navigation]")
+		VCStackDebugger.printPresentStack(label: "[Stack] Permission [Present]")
+		VCStackDebugger.printVisibleViewController(label: "[Stack] Permission [VisibleVC]")
 	}
 	
 	override func setupViewStyle() {
 
+	}
+	
+	@IBAction func didTapButton(_ sender: UIButton) {
+		switch sender {
+		case moveScreenButton:
+			ChangeViewControllerProvider.shared.present(self, toVC: FirstDetailViewController())
+		case moveScreenTwoButton:
+			ChangeViewControllerProvider.shared.push(self, toVC: FirstDetailViewController())
+		case moveScreenThreeButton:
+			RootViewControllerProvider.shared.changeRootVC(.login)
+		default: break
+		}
 	}
 
 	private func startObservation() {

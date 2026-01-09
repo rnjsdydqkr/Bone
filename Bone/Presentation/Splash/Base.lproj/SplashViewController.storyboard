@@ -23,15 +23,41 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80V-J9-IoW">
+                                <rect key="frame" x="100" y="239" width="193" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lFH-Ho-mGG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOV-DV-OT9">
+                                <rect key="frame" x="100" y="324" width="193" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMV-w2-DBp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="QOV-DV-OT9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="1IK-1J-bCX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QOV-DV-OT9" secondAttribute="trailing" constant="100" id="ARs-U9-LSj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="80V-J9-IoW" secondAttribute="trailing" constant="100" id="I3w-NL-ZfG"/>
+                            <constraint firstItem="QOV-DV-OT9" firstAttribute="top" secondItem="80V-J9-IoW" secondAttribute="bottom" constant="50" id="ISt-Sj-geo"/>
                             <constraint firstItem="EMj-mS-6wh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="JJs-fR-fgC"/>
+                            <constraint firstItem="80V-J9-IoW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="SGQ-FN-MUd"/>
                             <constraint firstItem="EMj-mS-6wh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="jgH-gH-b1l"/>
+                            <constraint firstItem="80V-J9-IoW" firstAttribute="top" secondItem="EMj-mS-6wh" secondAttribute="bottom" constant="50" id="otd-o4-dJy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EMj-mS-6wh" secondAttribute="trailing" constant="100" id="y4R-4k-AKQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="moveScreenButton" destination="80V-J9-IoW" id="cxg-Bh-XqN"/>
+                        <outlet property="moveScreenTwoButton" destination="QOV-DV-OT9" id="JUD-1D-BBX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import KYKit
 
-class ThirdDetailViewController: UIViewController {
+class ThirdDetailViewController: KYViewController {
 	
 	@IBOutlet private weak var moveScreenButton: UIButton!
 	@IBOutlet private weak var moveScreenTwoButton: UIButton!
@@ -15,51 +16,32 @@ class ThirdDetailViewController: UIViewController {
 	let viewModel = ThirdDetailViewModel()
 
 	override func viewDidLoad() {
-			super.viewDidLoad()
-
+		super.viewDidLoad()
+		setupDismissSwipeGesture()
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		VCStackDebugger.printNavigationStack(label: "ThirdDetail")
-		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "ThirdDetail")
-		VCStackDebugger.printPresentStack(label: "ThirdDetail")
+		VCStackDebugger.printRootViewController(label: "[Stack] ThirdDetail [RootVC]")
+		VCStackDebugger.printNavigationStack(nav: self.navigationController, label: "[Stack] ThirdDetail [Navigation]")
+		VCStackDebugger.printPresentStack(label: "[Stack] ThirdDetail [Present]")
+		VCStackDebugger.printVisibleViewController(label: "[Stack] ThirdDetail [VisibleVC]")
 	}
 	
 	override func viewDidAppear(_ animated: Bool) {
 			super.viewDidAppear(animated)
-			VCStackDebugger.printVisibleViewController(label: "ThirdDetail")
+		setupDismissSwipeGesture()
 	}
 	
 	@IBAction func didTapButton(_ sender: UIButton) {
 		switch sender {
 		case moveScreenButton:
-			moveFourDetailVC()
+			ChangeViewControllerProvider.shared.present(self, toVC: FourDetailViewController())
 		case moveScreenTwoButton:
-			self.dismiss(animated: true, completion: nil)
+			ChangeViewControllerProvider.shared.push(self, toVC: FourDetailViewController())
 		default: break
 		}
-	}
-	
-	private func moveFirstDetailVC() {
-		let vc = viewModel.makeFirstDetailVC()
-		self.present(vc, animated: true)
-	}
-	
-	private func moveNavSecondDetailVC() {
-		let vc = viewModel.makeSecondDetailVC()
-		self.navigationController?.pushViewController(vc, animated: true)
-	}
-	
-	private func moveThirdDetailVC() {
-		let vc = viewModel.makeThirdDetailVC()
-		self.present(vc, animated: true)
-	}
-	
-	private func moveFourDetailVC() {
-		let vc = viewModel.makeFourDetailVC()
-		self.present(vc, animated: true)
 	}
 
 }

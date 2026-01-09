@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		941B6E322EF92A8D00F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E262EF92A8C00F8132B /* KYKit.framework */; };
+		9433D98B2F10B87600D96412 /* ChangeViewControllerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9433D98A2F10B84000D96412 /* ChangeViewControllerProvider.swift */; };
 		94E008F22F023AA200E7BA27 /* EntryScreenType+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008F12F023A6F00E7BA27 /* EntryScreenType+Enum.swift */; };
 		94EDA1022EFA656D00E65D21 /* KYKit.docc in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA0FF2EFA656D00E65D21 /* KYKit.docc */; };
 		94EDA1062EFA657400E65D21 /* KYKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1042EFA657400E65D21 /* KYKitTests.swift */; };
@@ -16,6 +17,8 @@
 		94EDA1362EFE380900E65D21 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1352EFE37FE00E65D21 /* UIFont+Extension.swift */; };
 		94EDA1392EFE3EB100E65D21 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA1382EFE3E9900E65D21 /* UIColor+Extension.swift */; };
 		94EDA13C2EFE458600E65D21 /* BuildType+Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDA13B2EFE454D00E65D21 /* BuildType+Enum.swift */; };
+		94EE2F3A2F0E4FAB0064F678 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F392F0E4FAB0064F678 /* ViewController+Extension.swift */; };
+		94EE2F3E2F0E556D0064F678 /* SwipeDismissable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F3D2F0E55440064F678 /* SwipeDismissable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,7 @@
 /* Begin PBXFileReference section */
 		941B6E262EF92A8C00F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E312EF92A8D00F8132B /* KYKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9433D98A2F10B84000D96412 /* ChangeViewControllerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewControllerProvider.swift; sourceTree = "<group>"; };
 		94E008F12F023A6F00E7BA27 /* EntryScreenType+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntryScreenType+Enum.swift"; sourceTree = "<group>"; };
 		94EDA0FF2EFA656D00E65D21 /* KYKit.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = KYKit.docc; sourceTree = "<group>"; };
 		94EDA1042EFA657400E65D21 /* KYKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYKitTests.swift; sourceTree = "<group>"; };
@@ -39,6 +43,8 @@
 		94EDA1352EFE37FE00E65D21 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		94EDA1382EFE3E9900E65D21 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		94EDA13B2EFE454D00E65D21 /* BuildType+Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BuildType+Enum.swift"; sourceTree = "<group>"; };
+		94EE2F392F0E4FAB0064F678 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		94EE2F3D2F0E55440064F678 /* SwipeDismissable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeDismissable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,15 @@
 				941B6E312EF92A8D00F8132B /* KYKitTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9433D9892F10B81F00D96412 /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				94EE2F3D2F0E55440064F678 /* SwipeDismissable.swift */,
+				94EE2F392F0E4FAB0064F678 /* ViewController+Extension.swift */,
+			);
+			path = Swipe;
 			sourceTree = "<group>";
 		};
 		94E008F02F023A3900E7BA27 /* LaunchType */ = {
@@ -137,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				94EDA1092EFA663A00E65D21 /* KYViewController.swift */,
+				9433D98A2F10B84000D96412 /* ChangeViewControllerProvider.swift */,
+				9433D9892F10B81F00D96412 /* Swipe */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -269,12 +286,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94EE2F3E2F0E556D0064F678 /* SwipeDismissable.swift in Sources */,
+				94EE2F3A2F0E4FAB0064F678 /* ViewController+Extension.swift in Sources */,
 				94E008F22F023AA200E7BA27 /* EntryScreenType+Enum.swift in Sources */,
 				94EDA1362EFE380900E65D21 /* UIFont+Extension.swift in Sources */,
 				94EDA13C2EFE458600E65D21 /* BuildType+Enum.swift in Sources */,
 				94EDA10A2EFA663A00E65D21 /* KYViewController.swift in Sources */,
 				94EDA1022EFA656D00E65D21 /* KYKit.docc in Sources */,
 				94EDA1122EFA87BC00E65D21 /* FontTypes+Enum.swift in Sources */,
+				9433D98B2F10B87600D96412 /* ChangeViewControllerProvider.swift in Sources */,
 				94EDA1392EFE3EB100E65D21 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +459,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +496,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,6 +526,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pky.KYKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -523,6 +546,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q822VU6G85;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pky.KYKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

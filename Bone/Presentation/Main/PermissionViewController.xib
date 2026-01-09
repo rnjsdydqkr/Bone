@@ -11,6 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PermissionViewController" customModule="Bone" customModuleProvider="target">
             <connections>
+                <outlet property="moveScreenButton" destination="wpo-QT-c04" id="Opu-3v-Xsz"/>
+                <outlet property="moveScreenThreeButton" destination="Owq-wM-Azi" id="iqD-rS-jEt"/>
+                <outlet property="moveScreenTwoButton" destination="Fir-4C-3ll" id="xGV-Iv-MaG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,13 +28,46 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpo-QT-c04">
+                    <rect key="frame" x="100" y="239" width="193" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="bwS-tC-qte"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fir-4C-3ll">
+                    <rect key="frame" x="100" y="324" width="193" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="ndk-zk-g8W"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owq-wM-Azi">
+                    <rect key="frame" x="100" y="409" width="193" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="ktn-88-cOv"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="Owq-wM-Azi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="017-yp-L2n"/>
                 <constraint firstItem="sKf-pf-QFn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="1tL-Kw-AWH"/>
+                <constraint firstItem="Fir-4C-3ll" firstAttribute="top" secondItem="wpo-QT-c04" secondAttribute="bottom" constant="50" id="4Zl-MO-r1b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Owq-wM-Azi" secondAttribute="trailing" constant="100" id="5bp-5h-r4g"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="sKf-pf-QFn" secondAttribute="trailing" constant="100" id="DUS-hE-sGY"/>
+                <constraint firstItem="Fir-4C-3ll" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="EcI-bn-WeK"/>
                 <constraint firstItem="sKf-pf-QFn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="JXP-pR-JN3"/>
+                <constraint firstItem="wpo-QT-c04" firstAttribute="top" secondItem="sKf-pf-QFn" secondAttribute="bottom" constant="50" id="JoX-kz-Dix"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wpo-QT-c04" secondAttribute="trailing" constant="100" id="Pfn-jg-y7o"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fir-4C-3ll" secondAttribute="trailing" constant="100" id="o2w-HC-K0B"/>
+                <constraint firstItem="wpo-QT-c04" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="rHP-aU-dXZ"/>
+                <constraint firstItem="Owq-wM-Azi" firstAttribute="top" secondItem="Fir-4C-3ll" secondAttribute="bottom" constant="50" id="uFU-BN-wKO"/>
             </constraints>
             <point key="canvasLocation" x="141" y="88"/>
         </view>

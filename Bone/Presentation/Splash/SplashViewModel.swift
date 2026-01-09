@@ -8,7 +8,7 @@
 import Foundation
 import KYKit
 
-final class SplashViewModel: EntryScreenProvider {
+final class SplashViewModel {
 	
 	func delaySplash(_ screenType: ScreenType) async {
 		try? await Task.sleep(for: .seconds(0.5))
@@ -18,6 +18,6 @@ final class SplashViewModel: EntryScreenProvider {
 	}
 	
 	private func changeScreen(_ screenType: ScreenType) {
-		changeRootVC(screenType)
+		RootViewControllerProvider.shared.changeRootVC(screenType)
 	}
 }

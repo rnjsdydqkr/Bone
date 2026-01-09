@@ -10,8 +10,9 @@ import KYKit
 
 final class MainViewController: KYViewController {
 	
-	@IBOutlet private weak var moveScreenButton: UIButton!
-	@IBOutlet private weak var moveScreenTwoButton: UIButton!
+	@IBOutlet public weak var moveScreenButton: UIButton!
+	@IBOutlet public weak var moveScreenTwoButton: UIButton!
+	@IBOutlet public weak var moveScreenThreeButton: UIButton!
 	
 	let viewModel = MainViewModel()
 
@@ -22,14 +23,10 @@ final class MainViewController: KYViewController {
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		VCStackDebugger.printNavigationStack(label: "Main")
-		VCStackDebugger.printRootViewController(nav: self.navigationController, label: "Main")
-		VCStackDebugger.printPresentStack(label: "Main")
-	}
-	
-	override func viewDidAppear(_ animated: Bool) {
-			super.viewDidAppear(animated)
-			VCStackDebugger.printVisibleViewController(label: "Main")
+		VCStackDebugger.printRootViewController(label: "[Stack] Main [RootVC]")
+		VCStackDebugger.printNavigationStack(nav: self.navigationController, label: "[Stack] Main [Navigation]")
+		VCStackDebugger.printPresentStack(label: "[Stack] Main [Present]")
+		VCStackDebugger.printVisibleViewController(label: "[Stack] Main [VisibleVC]")
 	}
 	
 	override func setupViewStyle() {
@@ -38,20 +35,14 @@ final class MainViewController: KYViewController {
 	
 	@IBAction func didTapButton(_ sender: UIButton) {
 		switch sender {
-		case moveScreenButton: moveFirstDetailVC()
-		case moveScreenTwoButton: moveNavSecondDetailVC()
+		case moveScreenButton:
+			ChangeViewControllerProvider.shared.present(self, toVC: FirstDetailViewController())
+		case moveScreenTwoButton:
+			ChangeViewControllerProvider.shared.push(self, toVC: FirstDetailViewController())
+		case moveScreenThreeButton:
+			RootViewControllerProvider.shared.changeRootVC(.login)
 		default: break
 		}
-	}
-	
-	private func moveFirstDetailVC() {
-		let vc = viewModel.makeFirstDetailVC()
-		self.present(vc, animated: true)
-	}
-	
-	private func moveNavSecondDetailVC() {
-		let vc = viewModel.makeSecondDetailVC()
-		self.navigationController?.pushViewController(vc, animated: true)
 	}
 
 }
