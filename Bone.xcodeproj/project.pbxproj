@@ -349,6 +349,14 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		9433D98E2F14883500D96412 /* Group */ = {
+			isa = PBXGroup;
+			children = (
+				94EDA1442EFE742300E65D21 /* AppInfo.swift */,
+			);
+			path = Group;
+			sourceTree = "<group>";
+		};
 		94E008E92F02364300E7BA27 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,10 +442,10 @@
 		94EDA1402EFE650000E65D21 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				94EE2F182F0DFE6B0064F678 /* Debugger */,
 				94EE2F382F0E4F150064F678 /* API */,
-				94EDA1442EFE742300E65D21 /* AppInfo.swift */,
+				9433D98E2F14883500D96412 /* Group */,
 				94EDA1432EFE66AD00E65D21 /* Constant */,
+				94EE2F182F0DFE6B0064F678 /* Debugger */,
 			);
 			path = Common;
 			sourceTree = "<group>";

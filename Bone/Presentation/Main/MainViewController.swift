@@ -18,6 +18,7 @@ final class MainViewController: KYViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {

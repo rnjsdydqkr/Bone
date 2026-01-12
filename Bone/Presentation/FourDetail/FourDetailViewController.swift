@@ -36,8 +36,8 @@ class FourDetailViewController: KYViewController {
 	@IBAction func didTapButton(_ sender: UIButton) {
 		switch sender {
 		case moveScreenButton:
-//			ChangeViewControllerProvider.shared.present(self, toVC: FirstDetailViewController())
-			ChangeViewControllerProvider.shared.present(self, toVC: SecondDetailViewController())
+			ChangeViewControllerProvider.shared.present(self, toVC: FirstDetailViewController())
+//			ChangeViewControllerProvider.shared.present(self, toVC: SecondDetailViewController())
 		case moveScreenTwoButton:
 			ChangeViewControllerProvider.shared.push(self, toVC: FirstDetailViewController())
 		case moveScreenThreeButton:
