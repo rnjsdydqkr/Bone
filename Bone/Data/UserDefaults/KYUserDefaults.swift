@@ -52,5 +52,13 @@ struct KYUserDefaults {
 	func removeObject(_ key: String) {
 		defaults.removeObject(forKey: key)
 	}
+	
+	mutating func clearAllData() {
+		self.userName = nil
+		self.age = nil
+		self.isDarkMode = nil
+		self.favoriteFruits = nil
+		self.appSettings = nil
+	}
 }
 

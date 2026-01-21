@@ -21,6 +21,8 @@
 		941B6E6B2EF92DE700F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; };
 		941B6E6C2EF92DE700F8132B /* KYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E922EFA352200F8132B /* SplashViewModel.swift */; };
+		943D94532F206BA60074A9E3 /* UserListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94522F206BA30074A9E3 /* UserListResult.swift */; };
+		943D94552F2092DA0074A9E3 /* UserListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94542F2092BF0074A9E3 /* UserListUsecase.swift */; };
 		94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */; };
 		94E008EC2F02367100E7BA27 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E008EB2F02367100E7BA27 /* MainViewController.xib */; };
 		94E008ED2F02367100E7BA27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008EA2F02367100E7BA27 /* MainViewController.swift */; };
@@ -110,6 +112,8 @@
 		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
 		941B6E6A2EF92DE700F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E922EFA352200F8132B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		943D94522F206BA30074A9E3 /* UserListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResult.swift; sourceTree = "<group>"; };
+		943D94542F2092BF0074A9E3 /* UserListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListUsecase.swift; sourceTree = "<group>"; };
 		94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYUserDefaults.swift; sourceTree = "<group>"; };
 		94E008EA2F02367100E7BA27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		94E008EB2F02367100E7BA27 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -299,6 +303,7 @@
 		941B6E8B2EFA33D400F8132B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				943D94522F206BA30074A9E3 /* UserListResult.swift */,
 				94EDA0F92EFA580D00E65D21 /* common */,
 			);
 			path = Entity;
@@ -307,6 +312,7 @@
 		941B6E8C2EFA33E400F8132B /* Usecase */ = {
 			isa = PBXGroup;
 			children = (
+				943D94542F2092BF0074A9E3 /* UserListUsecase.swift */,
 			);
 			path = Usecase;
 			sourceTree = "<group>";
@@ -693,6 +699,7 @@
 				94EE2F2F2F0E16D60064F678 /* FirstDetailViewModel.swift in Sources */,
 				94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */,
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
+				943D94532F206BA60074A9E3 /* UserListResult.swift in Sources */,
 				94EE2F332F0E16F90064F678 /* ThirdDetailViewModel.swift in Sources */,
 				94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */,
 				94EE2F242F0E16800064F678 /* SecondDetailViewController.swift in Sources */,
@@ -707,6 +714,7 @@
 				94EE2F282F0E16A00064F678 /* ThirdDetailViewController.swift in Sources */,
 				94EDA1422EFE657B00E65D21 /* NotificationName.swift in Sources */,
 				94E008FC2F023CBD00E7BA27 /* LoginViewController.swift in Sources */,
+				943D94552F2092DA0074A9E3 /* UserListUsecase.swift in Sources */,
 				94EE2F202F0E16640064F678 /* FirstDetailViewController.swift in Sources */,
 				94EE2F352F0E17080064F678 /* FourDetailViewModel.swift in Sources */,
 				94EE2F192F0DFE6B0064F678 /* VCStackDebugger.swift in Sources */,
