@@ -29,7 +29,7 @@ struct UserListResult: Codable {
 }
 
 // MARK: - UserListItem
-struct UserListItem: Codable, Identifiable {
+struct UserListItem: Codable, Identifiable, Hashable {
 	let login: String
 	let id: Int
 	let imageURL: String

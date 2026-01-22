@@ -23,6 +23,7 @@
 		941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E922EFA352200F8132B /* SplashViewModel.swift */; };
 		943D94532F206BA60074A9E3 /* UserListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94522F206BA30074A9E3 /* UserListResult.swift */; };
 		943D94552F2092DA0074A9E3 /* UserListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94542F2092BF0074A9E3 /* UserListUsecase.swift */; };
+		943D94572F20A6E30074A9E3 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */; };
 		94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */; };
 		94E008EC2F02367100E7BA27 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E008EB2F02367100E7BA27 /* MainViewController.xib */; };
 		94E008ED2F02367100E7BA27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008EA2F02367100E7BA27 /* MainViewController.swift */; };
@@ -114,6 +115,7 @@
 		941B6E922EFA352200F8132B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		943D94522F206BA30074A9E3 /* UserListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResult.swift; sourceTree = "<group>"; };
 		943D94542F2092BF0074A9E3 /* UserListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListUsecase.swift; sourceTree = "<group>"; };
+		943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
 		94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYUserDefaults.swift; sourceTree = "<group>"; };
 		94E008EA2F02367100E7BA27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		94E008EB2F02367100E7BA27 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -320,6 +322,7 @@
 		941B6E8D2EFA33F000F8132B /* RepositoryProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */,
 			);
 			path = RepositoryProtocol;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */,
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
 				943D94532F206BA60074A9E3 /* UserListResult.swift in Sources */,
+				943D94572F20A6E30074A9E3 /* UserRepositoryProtocol.swift in Sources */,
 				94EE2F332F0E16F90064F678 /* ThirdDetailViewModel.swift in Sources */,
 				94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */,
 				94EE2F242F0E16800064F678 /* SecondDetailViewController.swift in Sources */,
