@@ -8,7 +8,7 @@
 import Foundation
 
 protocol UserListUsecaseProtocol {
-	func fetchUser(query: String, page: Int) async -> Result<UserListResult, NetworkError>
+	func fetchUser(query: String, page: Int) async -> Result<UserListResponse, NetworkError>
 	func getFavoriteUsers() -> Result<[UserListItem], CoreDataError>
 	func saveFavoriteUsers(user: UserListItem) -> Result<Bool, CoreDataError>
 	func deleteFavoriteUser(userID: Int) -> Result<Bool, CoreDataError>
@@ -24,7 +24,7 @@ struct UserListUsecase: UserListUsecaseProtocol {
 		self.repository = repository
 	}
 	
-	func fetchUser(query: String, page: Int) async -> Result<UserListResult, NetworkError> {
+	func fetchUser(query: String, page: Int) async -> Result<UserListResponse, NetworkError> {
 		await repository.fetchUser(query: query, page: page)
 	}
 	

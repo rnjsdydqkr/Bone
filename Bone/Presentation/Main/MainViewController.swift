@@ -41,7 +41,13 @@ final class MainViewController: KYViewController {
 		case moveScreenTwoButton:
 			ChangeViewControllerProvider.shared.push(self, toVC: FirstDetailViewController())
 		case moveScreenThreeButton:
-			RootViewControllerProvider.shared.changeRootVC(.login)
+//			RootViewControllerProvider.shared.changeRootVC(.login)
+			let session = UserSession()
+			let manager = NetworkManager(session: session)
+			let userNetwork = UserNetwork(manager: manager)
+			Task {
+				await userNetwork.fetchUser(query: "q", page: 2)
+			}
 		default: break
 		}
 	}

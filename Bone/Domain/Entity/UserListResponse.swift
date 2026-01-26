@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - SearchUserResponse
-struct UserListResult: Codable {
+struct UserListResponse: Codable {
 	let totalCount: Int
 	let incompleteResults: Bool
 	let items: [UserListItem]

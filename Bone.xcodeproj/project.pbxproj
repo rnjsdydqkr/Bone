@@ -21,7 +21,7 @@
 		941B6E6B2EF92DE700F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; };
 		941B6E6C2EF92DE700F8132B /* KYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E922EFA352200F8132B /* SplashViewModel.swift */; };
-		943D94532F206BA60074A9E3 /* UserListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94522F206BA30074A9E3 /* UserListResult.swift */; };
+		943D94532F206BA60074A9E3 /* UserListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94522F206BA30074A9E3 /* UserListResponse.swift */; };
 		943D94552F2092DA0074A9E3 /* UserListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94542F2092BF0074A9E3 /* UserListUsecase.swift */; };
 		943D94572F20A6E30074A9E3 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */; };
 		943D945A2F2213EA0074A9E3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 943D94592F2213EA0074A9E3 /* Alamofire */; };
@@ -32,6 +32,10 @@
 		943D94652F2740720074A9E3 /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94642F2740660074A9E3 /* SessionProtocol.swift */; };
 		943D94682F2748A40074A9E3 /* TopicSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94672F27489B0074A9E3 /* TopicSession.swift */; };
 		943D946A2F2748AF0074A9E3 /* TopicNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94692F2748AB0074A9E3 /* TopicNetwork.swift */; };
+		943D946C2F27539F0074A9E3 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D946B2F27536D0074A9E3 /* UserRepository.swift */; };
+		943D94702F275DCA0074A9E3 /* TopicListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D946F2F275DB30074A9E3 /* TopicListUsecase.swift */; };
+		943D94722F275DD70074A9E3 /* TopicListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94712F275DD10074A9E3 /* TopicListResponse.swift */; };
+		943D94742F27601E0074A9E3 /* TopicRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94732F2760120074A9E3 /* TopicRepositoryProtocol.swift */; };
 		94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */; };
 		94E008EC2F02367100E7BA27 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94E008EB2F02367100E7BA27 /* MainViewController.xib */; };
 		94E008ED2F02367100E7BA27 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E008EA2F02367100E7BA27 /* MainViewController.swift */; };
@@ -121,7 +125,7 @@
 		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
 		941B6E6A2EF92DE700F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E922EFA352200F8132B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		943D94522F206BA30074A9E3 /* UserListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResult.swift; sourceTree = "<group>"; };
+		943D94522F206BA30074A9E3 /* UserListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResponse.swift; sourceTree = "<group>"; };
 		943D94542F2092BF0074A9E3 /* UserListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListUsecase.swift; sourceTree = "<group>"; };
 		943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
 		943D945D2F22141B0074A9E3 /* UserSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSession.swift; sourceTree = "<group>"; };
@@ -130,6 +134,10 @@
 		943D94642F2740660074A9E3 /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
 		943D94672F27489B0074A9E3 /* TopicSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicSession.swift; sourceTree = "<group>"; };
 		943D94692F2748AB0074A9E3 /* TopicNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicNetwork.swift; sourceTree = "<group>"; };
+		943D946B2F27536D0074A9E3 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		943D946F2F275DB30074A9E3 /* TopicListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListUsecase.swift; sourceTree = "<group>"; };
+		943D94712F275DD10074A9E3 /* TopicListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicListResponse.swift; sourceTree = "<group>"; };
+		943D94732F2760120074A9E3 /* TopicRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicRepositoryProtocol.swift; sourceTree = "<group>"; };
 		94E008E72F0216CF00E7BA27 /* KYUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYUserDefaults.swift; sourceTree = "<group>"; };
 		94E008EA2F02367100E7BA27 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		94E008EB2F02367100E7BA27 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -321,7 +329,8 @@
 		941B6E8B2EFA33D400F8132B /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				943D94522F206BA30074A9E3 /* UserListResult.swift */,
+				943D94522F206BA30074A9E3 /* UserListResponse.swift */,
+				943D94712F275DD10074A9E3 /* TopicListResponse.swift */,
 				94EDA0F92EFA580D00E65D21 /* common */,
 			);
 			path = Entity;
@@ -331,6 +340,7 @@
 			isa = PBXGroup;
 			children = (
 				943D94542F2092BF0074A9E3 /* UserListUsecase.swift */,
+				943D946F2F275DB30074A9E3 /* TopicListUsecase.swift */,
 			);
 			path = Usecase;
 			sourceTree = "<group>";
@@ -339,6 +349,7 @@
 			isa = PBXGroup;
 			children = (
 				943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */,
+				943D94732F2760120074A9E3 /* TopicRepositoryProtocol.swift */,
 			);
 			path = RepositoryProtocol;
 			sourceTree = "<group>";
@@ -353,10 +364,11 @@
 		941B6E8F2EFA345300F8132B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				943D94642F2740660074A9E3 /* SessionProtocol.swift */,
-				943D94602F2219000074A9E3 /* NetworkManager.swift */,
-				943D945F2F2218F00074A9E3 /* User */,
-				943D94662F27488A0074A9E3 /* Topic */,
+				943D945D2F22141B0074A9E3 /* UserSession.swift */,
+				943D94622F273FAE0074A9E3 /* UserNetwork.swift */,
+				943D94672F27489B0074A9E3 /* TopicSession.swift */,
+				943D94692F2748AB0074A9E3 /* TopicNetwork.swift */,
+				943D946E2F2755440074A9E3 /* common */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -364,6 +376,7 @@
 		941B6E902EFA347100F8132B /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				943D946B2F27536D0074A9E3 /* UserRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -386,22 +399,13 @@
 			path = Group;
 			sourceTree = "<group>";
 		};
-		943D945F2F2218F00074A9E3 /* User */ = {
+		943D946E2F2755440074A9E3 /* common */ = {
 			isa = PBXGroup;
 			children = (
-				943D945D2F22141B0074A9E3 /* UserSession.swift */,
-				943D94622F273FAE0074A9E3 /* UserNetwork.swift */,
+				943D94642F2740660074A9E3 /* SessionProtocol.swift */,
+				943D94602F2219000074A9E3 /* NetworkManager.swift */,
 			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		943D94662F27488A0074A9E3 /* Topic */ = {
-			isa = PBXGroup;
-			children = (
-				943D94672F27489B0074A9E3 /* TopicSession.swift */,
-				943D94692F2748AB0074A9E3 /* TopicNetwork.swift */,
-			);
-			path = Topic;
+			path = common;
 			sourceTree = "<group>";
 		};
 		94E008E92F02364300E7BA27 /* Main */ = {
@@ -745,12 +749,14 @@
 				94E008FE2F023CF700E7BA27 /* PermissionViewModel.swift in Sources */,
 				94EE2F2F2F0E16D60064F678 /* FirstDetailViewModel.swift in Sources */,
 				94EDA0FB2EFA58DB00E65D21 /* NetworkError.swift in Sources */,
+				943D94742F27601E0074A9E3 /* TopicRepositoryProtocol.swift in Sources */,
 				943D945E2F2214240074A9E3 /* UserSession.swift in Sources */,
 				941B6E102EF5B48A00F8132B /* SceneDelegate.swift in Sources */,
-				943D94532F206BA60074A9E3 /* UserListResult.swift in Sources */,
+				943D94532F206BA60074A9E3 /* UserListResponse.swift in Sources */,
 				943D946A2F2748AF0074A9E3 /* TopicNetwork.swift in Sources */,
 				943D94572F20A6E30074A9E3 /* UserRepositoryProtocol.swift in Sources */,
 				943D94612F22190A0074A9E3 /* NetworkManager.swift in Sources */,
+				943D94702F275DCA0074A9E3 /* TopicListUsecase.swift in Sources */,
 				94EE2F332F0E16F90064F678 /* ThirdDetailViewModel.swift in Sources */,
 				94E008E82F0216ED00E7BA27 /* KYUserDefaults.swift in Sources */,
 				94EE2F242F0E16800064F678 /* SecondDetailViewController.swift in Sources */,
@@ -767,10 +773,12 @@
 				94E008FC2F023CBD00E7BA27 /* LoginViewController.swift in Sources */,
 				943D94552F2092DA0074A9E3 /* UserListUsecase.swift in Sources */,
 				94EE2F202F0E16640064F678 /* FirstDetailViewController.swift in Sources */,
+				943D946C2F27539F0074A9E3 /* UserRepository.swift in Sources */,
 				94EE2F352F0E17080064F678 /* FourDetailViewModel.swift in Sources */,
 				94EE2F192F0DFE6B0064F678 /* VCStackDebugger.swift in Sources */,
 				941B6E122EF5B48A00F8132B /* I18N.swift in Sources */,
 				941B6E132EF5B48A00F8132B /* Bone.xcdatamodeld in Sources */,
+				943D94722F275DD70074A9E3 /* TopicListResponse.swift in Sources */,
 				94E009002F023D1A00E7BA27 /* LoginViewModel.swift in Sources */,
 				943D94682F2748A40074A9E3 /* TopicSession.swift in Sources */,
 				94EE2F2D2F0E16C40064F678 /* FourDetailViewController.swift in Sources */,
