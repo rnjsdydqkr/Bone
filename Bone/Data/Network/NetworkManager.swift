@@ -24,20 +24,41 @@ class NetworkManager: NetworkManagerProtocol {
 		guard let url = URL(string: url) else {
 			return .failure(.urlError)
 		}
+		
 		let result = await session.request(url, method: method, parameter: parameters, headers: tokenHeader).serializingData().response
-		if let error = result.error { return .failure(.requestFailed(error.localizedDescription)) }
-		guard let data = result.data else { return .failure(.dataNil) }
-		guard let response = result.response else { return .failure(.invalidResponse) }
-		if 200..<400 ~= response.statusCode {
-			do {
-				let decodedData = try JSONDecoder().decode(T.self, from: data)
-				return .success(decodedData)
-			} catch {
-				return .failure(.failToDecode(error.localizedDescription))
+		switch result.result {
+		case .success(let data):
+			guard let response = result.response else { return .failure(.invalidResponse) }
+			if 200..<400 ~= response.statusCode {
+				do {
+					let decodedData = try JSONDecoder().decode(T.self, from: data)
+					return .success(decodedData)
+				} catch {
+					return .failure(.failToDecode(error.localizedDescription))
+				}
+			} else {
+				return .failure(.serverError(response.statusCode))
 			}
-		} else {
-			return .failure(.serverError(response.statusCode))
+		case .failure(let error):
+			return .failure(.requestFailed(error.localizedDescription))
 		}
+		
+//		let result = await session.request(url, method: method, parameter: parameters, headers: tokenHeader).serializingData().response
+//		if let error = result.error { return .failure(.requestFailed(error.localizedDescription)) }
+//		guard let data = result.data else { return .failure(.dataNil) }
+//		guard let response = result.response else { return .failure(.invalidResponse) }
+//		if 200..<400 ~= response.statusCode {
+//			do {
+//				let decodedData = try JSONDecoder().decode(T.self, from: data)
+//				return .success(decodedData)
+//			} catch {
+//				return .failure(.failToDecode(error.localizedDescription))
+//			}
+//		} else {
+//			return .failure(.serverError(response.statusCode))
+//		}
+		
+		
 	}
 	
 	
