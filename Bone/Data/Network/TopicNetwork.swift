@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 protocol TopicNetworkProtocol {
-	func fetchUser(query: String) async -> Result<TopicListResponse, NetworkError>
+	func fetchUser(query: String, pg: Int) async -> Result<TopicListResponse, NetworkError>
 }
 
 final class TopicNetwork: TopicNetworkProtocol {
@@ -17,8 +17,8 @@ final class TopicNetwork: TopicNetworkProtocol {
 	init(manager: NetworkManagerProtocol) {
 		self.manager = manager
 	}
-	func fetchUser(query: String) async -> Result<TopicListResponse, NetworkError> {
-		let url = "https://api.github.com/search/topics?q=\(query)"
+	func fetchUser(query: String, pg: Int)  async -> Result<TopicListResponse, NetworkError> {
+		let url = "https://api.github.com/search/topics?q=\(query)&page=\(pg)"
 		return await manager.fetchData(url: url, method: .get, parameters: nil)
 	}
 	

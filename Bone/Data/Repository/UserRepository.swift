@@ -30,7 +30,7 @@ struct UserRepository: UserRepositoryProtocol {
 	}
 	
 	func deleteFavoriteUser(userID: Int) -> Result<Bool, CoreDataError> {
-		/// TODO 
+		/// TODO
 //		return network.deleteFavoriteUser(userID: userID)
 		return .success(false)
 	}
