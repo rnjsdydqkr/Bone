@@ -47,4 +47,3 @@ class FourDetailViewController: KYViewController {
 	}
 
 }
-// 임시 테스트 주석
