@@ -41,7 +41,7 @@ class FirstDetailViewController: KYViewController {
 		default: break
 		}
 	}
-	// 테스트 코드
+  
 //	private func setGestureRecognizer() {
 //		let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe))
 //		swipeDown.direction = .right
