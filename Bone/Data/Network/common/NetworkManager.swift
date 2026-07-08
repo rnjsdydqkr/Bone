@@ -43,6 +43,7 @@ class NetworkManager: NetworkManagerProtocol {
 			return .failure(.requestFailed(error.localizedDescription))
 		}
 		
+    
 //		let result = await session.request(url, method: method, parameter: parameters, headers: tokenHeader).serializingData().response
 //		if let error = result.error { return .failure(.requestFailed(error.localizedDescription)) }
 //		guard let data = result.data else { return .failure(.dataNil) }
