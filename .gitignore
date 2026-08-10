@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+
+# Xcode - 사용자별 설정 (커밋 대상 아님)
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+
+# Xcode - 빌드 산출물
+build/
+DerivedData/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+.swiftpm/
+
+# CocoaPods / Carthage (현재 미사용, 향후 대비)
+Pods/
+Carthage/Build/
