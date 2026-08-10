@@ -36,12 +36,13 @@ struct VCStackDebugger {
 		}
 
 		print("===================================")
-		print("[Stack] [Root]: \(type(of: currentVC))")
+		print("[\(label)] [Root]: \(type(of: currentVC))")
 
 		// presentedViewController가 nil이 아닐 때까지 계속 추적
-		while let presentedVC = currentVC.presentedViewController {
+		// dismiss 애니메이션이 끝나야 관계가 끊기므로, 사라지는 중인 VC는 제외한다
+		while let presentedVC = currentVC.presentedViewController, !presentedVC.isBeingDismissed {
 			currentVC = presentedVC
-			print("[Stack] [Presented]: \(type(of: presentedVC))")
+			print("[\(label)] [Presented]: \(type(of: presentedVC))")
 		}
 		print("===================================")
 	}
@@ -52,7 +53,8 @@ struct VCStackDebugger {
 			
 			var currentVC: UIViewController? = root
 			
-			while let presented = currentVC?.presentedViewController {
+			// dismiss 중인 VC는 아직 관계가 살아있을 뿐 사용자에게 보이는 화면이 아니므로 제외한다
+			while let presented = currentVC?.presentedViewController, !presented.isBeingDismissed {
 					currentVC = presented
 			}
 			
@@ -61,7 +63,5 @@ struct VCStackDebugger {
 			}
 			
 			print("[\(label)] 사용자가 보고 있는 최상단 VC: \(type(of: currentVC!))")
-		
-			print("[Stack]")
 	}
 }
