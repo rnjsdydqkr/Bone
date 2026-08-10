@@ -58,8 +58,12 @@ struct VCStackDebugger {
 					currentVC = presented
 			}
 			
+			// visibleViewController는 모달로 present된 VC가 있으면 그것을 반환한다.
+			// 위 루프에서 살아있는 모달은 이미 타고 내려갔으므로, 여기서 nav가 들고 있는 모달은
+			// dismiss 중인 VC뿐이다. 따라서 항상 topViewController가 실제로 보이는 화면이다.
 			if let nav = currentVC as? UINavigationController {
-					currentVC = nav.visibleViewController
+//          currentVC = nav.visibleViewController
+					currentVC = nav.topViewController
 			}
 			
 			print("[\(label)] 사용자가 보고 있는 최상단 VC: \(type(of: currentVC!))")
