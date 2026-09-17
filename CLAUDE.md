@@ -69,3 +69,45 @@ VC 간 push/present는 KYKit의 `ChangeViewControllerProvider`를 사용하며, 
 - UserDefaults는 `KYUserDefaults`의 `@UserDefault` propertyWrapper를 통해 접근합니다. 직접 `UserDefaults.standard`를 사용하지 않습니다.
 - 화면 진입 시 `VCStackDebugger`로 VC 스택을 출력하는 것이 현재 패턴입니다 (SplashViewController 참고).
 - 다국어 문자열은 `I18N.swift`를 통해 관리합니다.
+- 파일 내부의 코드 배치는 아래 **MARK 컨벤션**을 따릅니다.
+
+## MARK 컨벤션 (코드 정렬)
+
+Presentation 레이어의 ViewController / ViewModel은 아래 순서로 MARK 섹션을 두고, 각 멤버를 해당 섹션 안에 배치합니다. 추후 Combine 기반 MVVM으로 전환할 때 새 섹션을 만들 필요가 없도록, **코드가 아직 없는 섹션도 빈 자리로 남겨둡니다.**
+
+### ViewController
+
+```swift
+// MARK: - IBOutlet
+// MARK: - Properties                      // viewModel, cancellables
+// MARK: - Life Cycle                      // init / deinit / viewDidLoad / viewWillAppear ...
+// MARK: - Setup (초기 세팅)                 // delegate 연결, cell register 등
+// MARK: - Binding (ViewModel 바인딩 / 구독)  // Combine sink·assign, NotificationCenter 구독
+// MARK: - UI (뷰 갱신 / 스타일)              // setupViewStyle() override, 뷰 갱신
+// MARK: - Function (기능 로직 / 화면 이동)
+// MARK: - Action (사용자 이벤트)             // @IBAction, @objc 터치 핸들러
+```
+
+- **API Request / Response 섹션은 VC에 두지 않습니다.** 네트워크 호출과 응답 처리는 ViewModel의 책임입니다.
+- `setupViewStyle()`은 `KYViewController.viewWillAppear`에서 자동 호출되므로 Life Cycle이 아니라 **UI** 섹션에 둡니다.
+- `VCStackDebugger` 호출 블록은 **Life Cycle**(`viewWillAppear`) 안에 그대로 둡니다.
+- NotificationCenter 관련 메서드(등록 / 해제 / post / 수신)는 Setup·Function으로 쪼개지 말고 **Binding**에 모읍니다. Combine으로 바꿔도 같은 자리에 들어옵니다 (PermissionViewController 참고).
+- delegate / dataSource 구현은 파일 하단 extension으로 분리하고, `// MARK: - UITableViewDelegate`처럼 프로토콜 이름을 그대로 씁니다.
+
+### ViewModel
+
+```swift
+// MARK: - Input / Output                  // Combine Input / Output 타입 정의
+// MARK: - Properties                      // usecase 의존성, Subject / @Published
+// MARK: - Initializer                     // DI 주입
+// MARK: - Binding (Input → Output)        // transform(input:) 등
+// MARK: - Function (기능 로직 / 화면 이동)
+// MARK: - API Request
+// MARK: - API Response
+```
+
+### 공통 규칙
+
+- 형식은 `// MARK: - 이름` (하이픈 포함), 들여쓰기는 **탭**, 섹션 앞뒤로 빈 줄 하나를 둡니다.
+- `RootViewControllerProvider` 같은 Presentation 헬퍼는 전체 스켈레톤 대신 실제 멤버가 있는 섹션(`Properties`, `Function`)만 사용합니다.
+- Data / Domain 레이어에는 아직 별도 MARK 규칙이 없습니다.
