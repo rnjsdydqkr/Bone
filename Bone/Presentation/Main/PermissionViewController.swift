@@ -56,8 +56,8 @@ class PermissionViewController: KYViewController {
 
 	private func stopObservation() {
 		NotificationCenter.default.removeObserver(self, name: .didStartAction, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(didReceivedObserver(_:)), name: .didStartDataAction, object: nil)
-		NotificationCenter.default.addObserver(self, selector: #selector(didReceivedObserver(_:)), name: .didStartDictionaryAction, object: nil)
+		NotificationCenter.default.removeObserver(self, name: .didStartDataAction, object: nil)
+		NotificationCenter.default.removeObserver(self, name: .didStartDictionaryAction, object: nil)
 	}
 
 	private func sendDataObserver() {
