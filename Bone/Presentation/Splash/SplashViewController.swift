@@ -9,39 +9,54 @@ import UIKit
 import KYKit
 
 final class SplashViewController: KYViewController {
-	
+
+	// MARK: - IBOutlet
+
 	@IBOutlet public weak var moveScreenButton: UIButton!
 	@IBOutlet public weak var moveScreenTwoButton: UIButton!
-	
+
+	// MARK: - Properties
+
 	private let viewModel = SplashViewModel()
+
+	// MARK: - Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 	}
-	
-	override func setupViewStyle() {
 
-	}
-	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		
+
 		VCStackDebugger.printRootViewController(label: "[Stack] Splash [RootVC]")
 		VCStackDebugger.printNavigationStack(nav: self.navigationController, label: "[Stack] Splash [Navigation]")
 		VCStackDebugger.printPresentStack(label: "[Stack] Splash [Present]")
 		VCStackDebugger.printVisibleViewController(label: "[Stack] Splash [VisibleVC]")
 		print("**************************************")
 		print("**************************************")
-		
 	}
-	
+
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
 		Task {
 			await viewModel.delaySplash(.main)
 		}
 	}
-	
+
+	// MARK: - Setup (초기 세팅)
+
+	// MARK: - Binding (ViewModel 바인딩 / 구독)
+
+	// MARK: - UI (뷰 갱신 / 스타일)
+
+	override func setupViewStyle() {
+
+	}
+
+	// MARK: - Function (기능 로직 / 화면 이동)
+
+	// MARK: - Action (사용자 이벤트)
+
 	@IBAction func didTapButton(_ sender: UIButton) {
 		switch sender {
 		case moveScreenButton: break

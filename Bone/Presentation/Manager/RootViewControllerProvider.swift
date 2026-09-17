@@ -9,11 +9,16 @@ import UIKit
 import KYKit
 
 class RootViewControllerProvider {
+
+	// MARK: - Properties
+
 	static let shared = RootViewControllerProvider()
-	
+
+	// MARK: - Function (기능 로직 / 화면 이동)
+
 	func changeRootVC(_ vc: ScreenType) {
 		var changeVC: UIViewController?
-		
+
 		switch vc {
 		case .permission:
 			changeVC = PermissionViewController()
@@ -24,11 +29,11 @@ class RootViewControllerProvider {
 		@unknown default:
 			fatalError()
 		}
-		
+
 		guard let targetVC = changeVC else { return }
-		
+
 		let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
 		sceneDelegate?.changeRootNavigationController(targetVC)
 	}
-	
+
 }
