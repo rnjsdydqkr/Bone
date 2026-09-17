@@ -18,19 +18,19 @@ struct UserRepository: UserRepositoryProtocol {
 	}
 	
 	func getFavoriteUsers() -> Result<[UserListItem], CoreDataError> {
-		/// TODO
+    // TODO:
 //		return network.getFavoriteUsers()
 		return .success([])
 	}
 	
 	func saveFavoriteUsers(user: UserListItem) -> Result<Bool, CoreDataError> {
-		/// TODO
+    // TODO:
 //		return network.saveFavoriteUsers(user: user)
 		return .success(false)
 	}
 	
 	func deleteFavoriteUser(userID: Int) -> Result<Bool, CoreDataError> {
-		/// TODO
+    // TODO:
 //		return network.deleteFavoriteUser(userID: userID)
 		return .success(false)
 	}
