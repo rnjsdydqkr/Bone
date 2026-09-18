@@ -21,7 +21,6 @@
 		941B6E6B2EF92DE700F8132B /* KYKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; };
 		941B6E6C2EF92DE700F8132B /* KYKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 941B6E6A2EF92DE700F8132B /* KYKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		941B6E932EFA353600F8132B /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941B6E922EFA352200F8132B /* SplashViewModel.swift */; };
-		94FF00022F30000000AA0002 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF00012F30000000AA0001 /* ViewModel.swift */; };
 		943D94532F206BA60074A9E3 /* UserListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94522F206BA30074A9E3 /* UserListResponse.swift */; };
 		943D94552F2092DA0074A9E3 /* UserListUsecase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94542F2092BF0074A9E3 /* UserListUsecase.swift */; };
 		943D94572F20A6E30074A9E3 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */; };
@@ -74,6 +73,7 @@
 		94EE2F482F1081BE0064F678 /* BoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F452F1081BE0064F678 /* BoneUITests.swift */; };
 		94EE2F492F1081BE0064F678 /* BoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EE2F462F1081BE0064F678 /* BoneUITestsLaunchTests.swift */; };
 		94F8AD9C2F020BFD0074E6D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */; };
+		94FF00022F30000000AA0002 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF00012F30000000AA0001 /* ViewModel.swift */; };
 		9864C59D2F7261EE0066C1AA /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 9864C59C2F7261EE0066C1AA /* RxBlocking */; };
 		9864C5A12F7261EE0066C1AA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9864C5A02F7261EE0066C1AA /* RxCocoa */; };
 		9864C5A52F7261EE0066C1AA /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9864C5A42F7261EE0066C1AA /* RxRelay */; };
@@ -131,7 +131,6 @@
 		941B6E0E2EF5B48A00F8132B /* Bone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bone.xcdatamodel; sourceTree = "<group>"; };
 		941B6E6A2EF92DE700F8132B /* KYKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KYKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941B6E922EFA352200F8132B /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
-		94FF00012F30000000AA0001 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		943D94522F206BA30074A9E3 /* UserListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListResponse.swift; sourceTree = "<group>"; };
 		943D94542F2092BF0074A9E3 /* UserListUsecase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListUsecase.swift; sourceTree = "<group>"; };
 		943D94562F20A6DF0074A9E3 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
@@ -183,6 +182,7 @@
 		94EE2F452F1081BE0064F678 /* BoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneUITests.swift; sourceTree = "<group>"; };
 		94EE2F462F1081BE0064F678 /* BoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		94F8AD9B2F020BFD0074E6D6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94FF00012F30000000AA0001 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,14 +460,6 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		94FF00032F30000000AA0003 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				94FF00012F30000000AA0001 /* ViewModel.swift */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		94EDA0F92EFA580D00E65D21 /* common */ = {
 			isa = PBXGroup;
 			children = (
@@ -602,6 +594,14 @@
 				94EE2F462F1081BE0064F678 /* BoneUITestsLaunchTests.swift */,
 			);
 			path = BoneUITests;
+			sourceTree = "<group>";
+		};
+		94FF00032F30000000AA0003 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				94FF00012F30000000AA0001 /* ViewModel.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
