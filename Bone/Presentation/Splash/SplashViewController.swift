@@ -19,17 +19,17 @@ final class SplashViewController: KYViewController {
 	// MARK: - Properties
 
 	private let viewModel = SplashViewModel()
-  
-  private let viewDidAppearSubject = PassthroughSubject<Void, Never>()
-  
-  private let moveScreenButtonTappedSubject = PassthroughSubject<Void, Never>()
-  private let moveScreenTwoButtonTappedSubject = PassthroughSubject<Void, Never>()
+
+	private let viewDidAppearSubject = PassthroughSubject<Void, Never>()
+
+	private let moveScreenButtonTappedSubject = PassthroughSubject<Void, Never>()
+	private let moveScreenTwoButtonTappedSubject = PassthroughSubject<Void, Never>()
 
 	// MARK: - Life Cycle
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-    bindViewModel()
+		bindViewModel()
 	}
 
 	override func viewWillAppear(_ animated: Bool) {
@@ -45,23 +45,23 @@ final class SplashViewController: KYViewController {
 
 	override func viewDidAppear(_ animated: Bool) {
 		super.viewDidAppear(animated)
-    viewDidAppearSubject.send()
+		viewDidAppearSubject.send()
 	}
 
 	// MARK: - Setup (초기 세팅)
-  
-  private func bindViewModel() {
-    let input = SplashViewModel.Input(
-      viewDidAppear: viewDidAppearSubject.eraseToAnyPublisher(),
-      moveScreenButtonTapped: moveScreenButtonTappedSubject.eraseToAnyPublisher(),
-      moveScreenTwoButtonTapped: moveScreenTwoButtonTappedSubject.eraseToAnyPublisher()
-    )
-    
-    let output = viewModel.transform(input: input)
-
-  }
 
 	// MARK: - Binding (ViewModel 바인딩 / 구독)
+
+	private func bindViewModel() {
+		let input = SplashViewModel.Input(
+			viewDidAppear: viewDidAppearSubject.eraseToAnyPublisher(),
+			moveScreenButtonTapped: moveScreenButtonTappedSubject.eraseToAnyPublisher(),
+			moveScreenTwoButtonTapped: moveScreenTwoButtonTappedSubject.eraseToAnyPublisher()
+		)
+
+		let output = viewModel.transform(input: input)
+
+	}
 
 	// MARK: - UI (뷰 갱신 / 스타일)
 
@@ -76,7 +76,7 @@ final class SplashViewController: KYViewController {
 	@IBAction func didTapButton(_ sender: UIButton) {
 		switch sender {
 		case moveScreenButton: moveScreenButtonTappedSubject.send()
-    case moveScreenTwoButton: moveScreenTwoButtonTappedSubject.send()
+		case moveScreenTwoButton: moveScreenTwoButtonTappedSubject.send()
 		default: break
 		}
 	}
