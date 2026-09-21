@@ -25,7 +25,7 @@ import Combine
 
 	// MARK: - Properties
 
-	private var cancellable = Set<AnyCancellable>()
+	private var cancellables = Set<AnyCancellable>()
 
 	// MARK: - Initializer
 
@@ -37,17 +37,17 @@ import Combine
 				Task {
 					await self?.delaySplash(.main)
 				}
-			}.store(in: &cancellable)
+			}.store(in: &cancellables)
 
 		input.moveScreenButtonTapped
 			.sink { [weak self] _ in
 				print("moveScreenButtonTapped")
-			}.store(in: &cancellable)
+			}.store(in: &cancellables)
 
 		input.moveScreenTwoButtonTapped
 			.sink { [weak self] _ in
 				print("moveScreenTwoButtonTapped")
-			}.store(in: &cancellable)
+			}.store(in: &cancellables)
 
 		return Output()
 	}
